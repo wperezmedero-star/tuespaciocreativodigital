@@ -1,4341 +1,898 @@
-
-
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
-  <meta charset="UTF-8" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-
-  <title>Tu Espacio Creativo | Landing Pages, Branding y Presencia Digital para Negocios Locales</title>
-
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tu Espacio Creativo | Landing Pages, Branding y Presencia Digital</title>
   <meta name="description" content="Creamos landing pages, branding, logos, tarjetas digitales y presencia visual para negocios locales que quieren verse profesionales y conseguir más clientes.">
-
-  <meta name="keywords" content="landing page para negocios locales, diseño web para pequeños negocios, branding para negocios locales, tarjetas digitales, presencia digital, diseño para barberías, diseño para restaurantes, diseño para daycares, diseño web en Miami, diseño web en Hialeah">
-
+  <meta name="keywords" content="landing page negocios locales, diseño web Miami, branding local, tarjetas digitales, presencia digital">
   <meta name="author" content="Tu Espacio Creativo">
-
   <meta name="robots" content="index, follow">
-
-  <meta name="theme-color" content="#0b0b0f">
-
   <link rel="canonical" href="https://tuespaciocreativo.com/">
-
-
-
   <meta property="og:type" content="website">
-
   <meta property="og:title" content="Tu Espacio Creativo | Landing Pages, Branding y Presencia Digital">
-
-  <meta property="og:description" content="Creamos landing pages, logos, branding y presencia digital para negocios locales que quieren verse mejor y conseguir más clientes.">
-
+  <meta property="og:description" content="Diseño visual y presencia digital para negocios locales que quieren vender más.">
   <meta property="og:url" content="https://tuespaciocreativo.com/">
-
   <meta property="og:image" content="https://tuespaciocreativo.com/hero.jpg">
-
-  <meta property="og:locale" content="es_US">
-
-
-
-  <meta name="twitter:card" content="summary_large_image">
-
-  <meta name="twitter:title" content="Tu Espacio Creativo | Landing Pages, Branding y Presencia Digital">
-
-  <meta name="twitter:description" content="Diseño visual y presencia digital para negocios locales que quieren vender más.">
-
-  <meta name="twitter:image" content="https://tuespaciocreativo.com/hero.jpg">
-
-
-
   <link rel="icon" type="image/jpeg" href="./logo.jpeg">
-
   <link rel="apple-touch-icon" href="./logo.jpeg">
-
-
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-
-
-
-  <script type="application/ld+json">
-
-  {
-
-    "@context":"https://schema.org",
-
-    "@type":"LocalBusiness",
-
-    "name":"Tu Espacio Creativo",
-
-    "image":"https://tuespaciocreativo.com/logo.jpeg",
-
-    "url":"https://tuespaciocreativo.com/",
-
-    "telephone":"+1-786-354-8796",
-
-    "email":"wperezmedero@gmail.com",
-
-    "description":"Landing pages, branding, logos, tarjetas digitales y presencia visual para negocios locales.",
-
-    "areaServed":"Miami-Dade, Florida, United States",
-
-    "sameAs":[]
-
-  }
-
-  </script>
-
-
-
-  <style>
-
-    :root{
-
-      --bg:#0b0b0f;
-
-      --bg-soft:#12131a;
-
-      --panel:rgba(255,255,255,.06);
-
-      --panel-2:rgba(255,255,255,.09);
-
-      --line:rgba(255,255,255,.10);
-
-      --text:#f5f7fb;
-
-      --muted:#c2c7d1;
-
-      --soft:#8f97a7;
-
-      --blue:#2f7cff;
-
-      --cyan:#49dcff;
-
-      --purple:#8b5cff;
-
-      --gold:#e4be72;
-
-      --shadow:0 20px 50px rgba(0,0,0,.38);
-
-      --shadow-soft:0 12px 30px rgba(0,0,0,.24);
-
-      --glow-blue:0 0 0 1px rgba(73,220,255,.08), 0 0 30px rgba(73,220,255,.08);
-
-      --glow-purple:0 0 0 1px rgba(139,92,255,.08), 0 0 30px rgba(139,92,255,.10);
-
-      --radius:22px;
-
-      --max:1180px;
-
-      --nav-h:76px;
-
-    }
-
-
-
-    *{box-sizing:border-box}
-
-    html{scroll-behavior:smooth}
-
-    body{
-
-      margin:0;
-
-      font-family:'Inter',sans-serif;
-
-      color:var(--text);
-
-      background:
-
-        radial-gradient(900px 500px at -10% -10%, rgba(73,220,255,.09), transparent 45%),
-
-        radial-gradient(900px 500px at 110% 0%, rgba(139,92,255,.10), transparent 42%),
-
-        linear-gradient(180deg, #09090b 0%, #101117 45%, #09090b 100%);
-
-      overflow-x:hidden;
-
-      opacity:0;
-
-      animation:pageIn 1s ease forwards;
-
-    }
-
-
-
-    body.light-mode{
-
-      --bg:#f7f9fc;
-
-      --bg-soft:#ffffff;
-
-      --panel:rgba(255,255,255,.82);
-
-      --panel-2:rgba(255,255,255,.92);
-
-      --line:rgba(15,23,42,.10);
-
-      --text:#0f172a;
-
-      --muted:#475569;
-
-      --soft:#64748b;
-
-      --shadow:0 20px 50px rgba(15,23,42,.08);
-
-      --shadow-soft:0 12px 30px rgba(15,23,42,.06);
-
-      background:
-
-        radial-gradient(900px 500px at -10% -10%, rgba(73,220,255,.08), transparent 45%),
-
-        radial-gradient(900px 500px at 110% 0%, rgba(139,92,255,.08), transparent 42%),
-
-        linear-gradient(180deg, #f8fbff 0%, #eef4fb 45%, #f8fbff 100%);
-
-    }
-
-
-
-    @keyframes pageIn{
-
-      from{opacity:0}
-
-      to{opacity:1}
-
-    }
-
-
-
-    a{color:inherit;text-decoration:none}
-
-    .container{width:min(var(--max), calc(100% - 32px));margin:auto}
-
-    .muted{color:var(--muted)}
-
-
-
-    section{
-
-      padding:32px 0;
-
-      position:relative;
-
-    }
-
-
-
-    .section-head{
-
-      text-align:center;
-
-      max-width:800px;
-
-      margin:0 auto 28px;
-
-    }
-
-
-
-    .section-head h2{
-
-      margin:0 0 14px;
-
-      line-height:1.04;
-
-      font-size:clamp(2rem,4vw,3rem);
-
-      letter-spacing:-.04em;
-
-    }
-
-
-
-    .section-head p{
-
-      margin:0;
-
-      color:var(--muted);
-
-      line-height:1.72;
-
-    }
-
-
-
-    .page-loader{
-
-      position:fixed;
-
-      inset:0;
-
-      z-index:9999;
-
-      display:grid;
-
-      place-items:center;
-
-      background:
-
-        radial-gradient(circle at 30% 30%, rgba(73,220,255,.08), transparent 25%),
-
-        radial-gradient(circle at 70% 60%, rgba(139,92,255,.12), transparent 25%),
-
-        #09090b;
-
-      transition:opacity .6s ease, visibility .6s ease;
-
-    }
-
-
-
-    .page-loader.hide{
-
-      opacity:0;
-
-      visibility:hidden;
-
-      pointer-events:none;
-
-    }
-
-
-
-    .loader-core{
-
-      width:74px;
-
-      height:74px;
-
-      border-radius:50%;
-
-      border:3px solid rgba(255,255,255,.10);
-
-      border-top-color:var(--cyan);
-
-      border-right-color:var(--purple);
-
-      animation:spin 1s linear infinite;
-
-      box-shadow:0 0 35px rgba(73,220,255,.16);
-
-    }
-
-
-
-    @keyframes spin{
-
-      to{transform:rotate(360deg)}
-
-    }
-
-
-
-    .nav{
-
-      position:sticky;
-
-      top:0;
-
-      z-index:80;
-
-      min-height:var(--nav-h);
-
-      backdrop-filter:blur(14px);
-
-      background:rgba(10,10,12,.66);
-
-      border-bottom:1px solid rgba(255,255,255,.06);
-
-      transition:background .35s ease, box-shadow .35s ease, border-color .35s ease;
-
-    }
-
-
-
-    .nav.scrolled{
-
-      background:rgba(8,8,12,.86);
-
-      border-bottom:1px solid rgba(255,255,255,.12);
-
-      box-shadow:0 14px 40px rgba(0,0,0,.24);
-
-    }
-
-
-
-    .nav-inner{
-
-      min-height:var(--nav-h);
-
-      display:flex;
-
-      align-items:center;
-
-      justify-content:space-between;
-
-      gap:16px;
-
-    }
-
-
-
-    .brand{
-
-      font-weight:900;
-
-      letter-spacing:.2px;
-
-      font-size:1.05rem;
-
-      transition:transform .25s ease, text-shadow .25s ease;
-
-    }
-
-
-
-    .brand:hover{
-
-      transform:translateY(-1px);
-
-      text-shadow:0 0 18px rgba(73,220,255,.18);
-
-    }
-
-
-
-    .logo-nav{
-
-      height:42px;
-
-      width:auto;
-
-      object-fit:contain;
-
-      display:block;
-
-      filter:drop-shadow(0 4px 12px rgba(0,0,0,.4));
-
-      transition:transform .25s ease;
-
-    }
-
-
-
-    .logo-nav:hover{
-
-      transform:scale(1.05);
-
-    }
-
-
-
-    .nav-links{
-
-      display:flex;
-
-      gap:18px;
-
-      align-items:center;
-
-      flex-wrap:wrap;
-
-      color:var(--muted);
-
-      font-size:14px;
-
-    }
-
-
-
-    .nav-links a{
-
-      position:relative;
-
-      transition:color .25s ease, transform .25s ease;
-
-    }
-
-
-
-    .nav-links a:hover{
-
-      color:#fff;
-
-      transform:translateY(-1px);
-
-    }
-
-
-
-    .nav-links a::after{
-
-      content:"";
-
-      position:absolute;
-
-      left:0;
-
-      right:100%;
-
-      bottom:-4px;
-
-      height:1px;
-
-      background:linear-gradient(90deg,var(--cyan),var(--purple));
-
-      transition:right .25s ease;
-
-    }
-
-
-
-    .nav-links a:hover::after{
-
-      right:0;
-
-    }
-
-
-
-    .lang-switch{
-
-      display:flex;
-
-      gap:8px;
-
-      padding:6px;
-
-      border:1px solid var(--line);
-
-      border-radius:999px;
-
-      background:var(--panel);
-
-      box-shadow:var(--shadow-soft);
-
-    }
-
-
-
-    .lang-switch button{
-
-      border:0;
-
-      background:transparent;
-
-      color:var(--muted);
-
-      padding:8px 12px;
-
-      border-radius:999px;
-
-      font-weight:800;
-
-      cursor:pointer;
-
-      transition:all .25s ease;
-
-    }
-
-
-
-    .lang-switch button:hover{
-
-      color:#fff;
-
-      transform:translateY(-1px);
-
-    }
-
-
-
-    .lang-switch button.active{
-
-      background:linear-gradient(45deg, rgba(73,220,255,.18), rgba(139,92,255,.18));
-
-      color:#fff;
-
-      box-shadow:var(--glow-blue);
-
-    }
-
-
-
-    .theme-toggle{
-
-      border:1px solid var(--line);
-
-      background:var(--panel);
-
-      color:var(--text);
-
-      padding:10px 14px;
-
-      border-radius:999px;
-
-      font-weight:800;
-
-      cursor:pointer;
-
-      transition:all .25s ease;
-
-    }
-
-
-
-    .theme-toggle:hover{
-
-      transform:translateY(-1px);
-
-      box-shadow:var(--shadow-soft);
-
-    }
-
-
-
-    .hero{
-
-      min-height:calc(100vh - var(--nav-h));
-
-      display:flex;
-
-      align-items:center;
-
-      position:relative;
-
-      overflow:hidden;
-
-      padding:40px 0 28px;
-
-    }
-
-
-
-    .hero::before{
-
-      content:"";
-
-      position:absolute;
-
-      inset:0;
-
-      background:
-
-        radial-gradient(420px 260px at 14% 20%, rgba(73,220,255,.12), transparent 60%),
-
-        radial-gradient(320px 220px at 86% 18%, rgba(139,92,255,.14), transparent 62%),
-
-        linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));
-
-      animation:heroShift 12s ease-in-out infinite;
-
-      pointer-events:none;
-
-      will-change:transform;
-
-    }
-
-
-
-    @keyframes heroShift{
-
-      0%,100%{transform:translateY(0)}
-
-      50%{transform:translateY(-10px)}
-
-    }
-
-
-
-    .hero-grid{
-
-      display:grid;
-
-      grid-template-columns:1.02fr .98fr;
-
-      gap:22px;
-
-      align-items:stretch;
-
-      position:relative;
-
-      z-index:2;
-
-    }
-
-
-
-    .glass{
-
-      background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
-
-      border:1px solid var(--line);
-
-      border-radius:30px;
-
-      box-shadow:var(--shadow);
-
-      backdrop-filter:blur(16px);
-
-    }
-
-
-
-    .hero-copy{
-
-      padding:42px;
-
-      transform:translateZ(0);
-
-    }
-
-
-
-    .eyebrow{
-
-      display:inline-flex;
-
-      align-items:center;
-
-      gap:8px;
-
-      color:var(--gold);
-
-      text-transform:uppercase;
-
-      letter-spacing:.16em;
-
-      font-size:12px;
-
-      font-weight:900;
-
-      margin-bottom:16px;
-
-      animation:glowText 3.8s ease-in-out infinite;
-
-    }
-
-
-
-    @keyframes glowText{
-
-      0%,100%{text-shadow:0 0 0 transparent}
-
-      50%{text-shadow:0 0 18px rgba(228,190,114,.16)}
-
-    }
-
-
-
-    h1{
-
-      margin:0 0 16px;
-
-      line-height:.98;
-
-      letter-spacing:-.045em;
-
-      font-size:clamp(2.9rem, 6.6vw, 5.2rem);
-
-      max-width:11.5ch;
-
-    }
-
-
-
-    .lead{
-
-      margin:0 0 26px;
-
-      color:var(--muted);
-
-      line-height:1.72;
-
-      font-size:clamp(1.04rem,2vw,1.18rem);
-
-      max-width:58ch;
-
-    }
-
-
-
-    .hero-actions{
-
-      display:flex;
-
-      gap:14px;
-
-      flex-wrap:wrap;
-
-      margin-bottom:26px;
-
-    }
-
-
-
-    .btn{
-
-      position:relative;
-
-      display:inline-flex;
-
-      align-items:center;
-
-      justify-content:center;
-
-      gap:10px;
-
-      padding:14px 22px;
-
-      border-radius:16px;
-
-      border:1px solid var(--line);
-
-      font-weight:900;
-
-      overflow:hidden;
-
-      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-
-      will-change:transform;
-
-    }
-
-
-
-    .btn:hover{
-
-      transform:translateY(-3px);
-
-    }
-
-
-
-    .btn::before{
-
-      content:"";
-
-      position:absolute;
-
-      inset:0;
-
-      background:linear-gradient(110deg, transparent 20%, rgba(255,255,255,.15) 45%, transparent 68%);
-
-      transform:translateX(-120%);
-
-      transition:transform .7s ease;
-
-      pointer-events:none;
-
-    }
-
-
-
-    .btn:hover::before{
-
-      transform:translateX(120%);
-
-    }
-
-
-
-    .btn-primary{
-
-      color:#fff;
-
-      background:linear-gradient(135deg,var(--blue),var(--purple));
-
-      box-shadow:0 12px 30px rgba(47,124,255,.26);
-
-      animation:pulse 2.8s infinite;
-
-    }
-
-
-
-    .btn-primary:hover{
-
-      box-shadow:0 18px 40px rgba(47,124,255,.28), 0 0 30px rgba(139,92,255,.18);
-
-    }
-
-
-
-    .btn-secondary{
-
-      background:rgba(255,255,255,.05);
-
-      color:#fff;
-
-    }
-
-
-
-    .btn-secondary:hover{
-
-      border-color:rgba(73,220,255,.26);
-
-      box-shadow:var(--glow-blue);
-
-    }
-
-
-
-    @keyframes pulse{
-
-      0%,100%{box-shadow:0 12px 30px rgba(47,124,255,.22)}
-
-      50%{box-shadow:0 12px 40px rgba(73,220,255,.16), 0 0 0 10px rgba(47,124,255,.05)}
-
-    }
-
-
-
-    .metrics{
-
-      display:grid;
-
-      grid-template-columns:repeat(3,1fr);
-
-      gap:14px;
-
-    }
-
-
-
-    .metric{
-
-      padding:16px;
-
-      border-radius:18px;
-
-      background:rgba(255,255,255,.05);
-
-      border:1px solid var(--line);
-
-      transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
-
-      box-shadow:var(--shadow-soft);
-
-    }
-
-
-
-    .metric:hover{
-
-      transform:translateY(-4px);
-
-      border-color:rgba(73,220,255,.20);
-
-      box-shadow:var(--glow-blue);
-
-    }
-
-
-
-    .metric strong{
-
-      display:block;
-
-      margin-bottom:6px;
-
-    }
-
-
-
-    .metric span{
-
-      color:var(--muted);
-
-      font-size:.94rem;
-
-    }
-
-
-
-    .hero-side{
-
-      position:relative;
-
-      overflow:hidden;
-
-      min-height:540px;
-
-      border-radius:30px;
-
-      background-image:
-
-        linear-gradient(rgba(11,11,15,.30), rgba(11,11,15,.55)),
-
-        url('./hero.jpg');
-
-      background-size:cover;
-
-      background-position:center center;
-
-      background-repeat:no-repeat;
-
-      display:flex;
-
-      align-items:flex-end;
-
-      padding:28px;
-
-      will-change:background-position;
-
-      isolation:isolate;
-
-      box-shadow:var(--shadow);
-
-    }
-
-
-
-    .orb{
-
-      position:absolute;
-
-      border-radius:50%;
-
-      filter:blur(26px);
-
-      opacity:.44;
-
-      animation:drift 8s ease-in-out infinite;
-
-      pointer-events:none;
-
-    }
-
-
-
-    .orb.one{
-
-      width:180px;height:180px;
-
-      background:rgba(47,124,255,.34);
-
-      top:10%;right:8%;
-
-    }
-
-
-
-    .orb.two{
-
-      width:220px;height:220px;
-
-      background:rgba(139,92,255,.24);
-
-      left:8%;bottom:6%;
-
-      animation-delay:1.2s;
-
-    }
-
-
-
-    @keyframes drift{
-
-      0%,100%{transform:translateY(0)}
-
-      50%{transform:translateY(-12px)}
-
-    }
-
-
-
-    .hero-badge-box{
-
-      position:relative;
-
-      z-index:2;
-
-      width:min(420px,100%);
-
-      padding:22px;
-
-      border-radius:24px;
-
-      background:linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.05));
-
-      border:1px solid rgba(255,255,255,.16);
-
-      backdrop-filter:blur(14px);
-
-      box-shadow:0 24px 70px rgba(0,0,0,.34);
-
-      transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;
-
-    }
-
-
-
-    .hero-badge-box:hover{
-
-      transform:translateY(-4px);
-
-      box-shadow:0 30px 80px rgba(0,0,0,.38), 0 0 30px rgba(73,220,255,.08);
-
-      border-color:rgba(73,220,255,.22);
-
-    }
-
-
-
-    .hero-badge-box h3{
-
-      margin:0 0 10px;
-
-      font-size:1.2rem;
-
-    }
-
-
-
-    .hero-badge-box p{
-
-      margin:0;
-
-      color:#e3e8f2;
-
-      line-height:1.7;
-
-      font-size:.98rem;
-
-    }
-
-
-
-    .ticker-wrap{
-
-      margin-top:18px;
-
-      border-top:1px solid var(--line);
-
-      border-bottom:1px solid var(--line);
-
-      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-
-      overflow:hidden;
-
-      box-shadow:var(--shadow-soft);
-
-      border-radius:16px;
-
-    }
-
-
-
-    .ticker{
-
-      display:flex;
-
-      align-items:center;
-
-      gap:34px;
-
-      white-space:nowrap;
-
-      padding:14px 0;
-
-      color:var(--muted);
-
-      animation:ticker 24s linear infinite;
-
-      font-size:.96rem;
-
-      font-weight:700;
-
-    }
-
-
-
-    .ticker span{
-
-      position:relative;
-
-      display:inline-flex;
-
-      align-items:center;
-
-      gap:12px;
-
-    }
-
-
-
-    .ticker span::after{
-
-      content:"•";
-
-      color:rgba(228,190,114,.75);
-
-      margin-left:10px;
-
-    }
-
-
-
-    .ticker span:last-child::after{
-
-      content:"";
-
-      margin-left:0;
-
-    }
-
-
-
-    @keyframes ticker{
-
-      from{transform:translateX(0)}
-
-      to{transform:translateX(-50%)}
-
-    }
-
-
-
-    .bento{
-
-      display:grid;
-
-      grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
-
-      gap:18px;
-
-    }
-
-
-
-    .card{
-
-      position:relative;
-
-      overflow:hidden;
-
-      min-height:210px;
-
-      padding:24px;
-
-      border-radius:20px;
-
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-
-      border:1px solid var(--line);
-
-      box-shadow:var(--shadow);
-
-      transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease, filter .25s ease;
-
-      transform-style:preserve-3d;
-
-      will-change:transform;
-
-    }
-
-
-
-    .card:hover{
-
-      transform:translateY(-6px) rotateX(2deg) rotateY(-2deg);
-
-      border-color:rgba(73,220,255,.20);
-
-      box-shadow:0 26px 60px rgba(0,0,0,.34), 0 0 34px rgba(73,220,255,.06);
-
-      filter:brightness(1.02);
-
-    }
-
-
-
-    .card::before{
-
-      content:"";
-
-      position:absolute;
-
-      right:-46px;
-
-      top:-46px;
-
-      width:160px;
-
-      height:160px;
-
-      border-radius:50%;
-
-      background:radial-gradient(circle, rgba(47,124,255,.18), transparent 70%);
-
-      transition:transform .35s ease, opacity .35s ease;
-
-    }
-
-
-
-    .card:hover::before{
-
-      transform:scale(1.08);
-
-      opacity:.95;
-
-    }
-
-
-
-    .icon{
-
-      width:46px;
-
-      height:46px;
-
-      border-radius:14px;
-
-      display:grid;
-
-      place-items:center;
-
-      background:linear-gradient(135deg, rgba(47,124,255,.18), rgba(139,92,255,.18));
-
-      border:1px solid rgba(255,255,255,.12);
-
-      font-size:1.18rem;
-
-      margin-bottom:12px;
-
-      transition:transform .25s ease, box-shadow .25s ease;
-
-    }
-
-
-
-    .card:hover .icon{
-
-      transform:translateY(-2px) scale(1.04);
-
-      box-shadow:var(--glow-purple);
-
-    }
-
-
-
-    .card h3{
-
-      margin:0 0 10px;
-
-      font-size:1.15rem;
-
-    }
-
-
-
-    .card p{
-
-      margin:0;
-
-      color:var(--muted);
-
-      line-height:1.68;
-
-    }
-
-
-
-    .service-image{
-
-      width:100%;
-
-      height:220px;
-
-      object-fit:cover;
-
-      object-position:center;
-
-      display:block;
-
-      border-radius:14px;
-
-      margin:16px 0 14px;
-
-      border:1px solid rgba(255,255,255,.08);
-
-      box-shadow:0 10px 24px rgba(0,0,0,.25);
-
-      transition:transform .55s ease, filter .55s ease, box-shadow .55s ease;
-
-      will-change:transform;
-
-    }
-
-
-
-    .card:hover .service-image{
-
-      transform:scale(1.04);
-
-      filter:brightness(1.08);
-
-      box-shadow:0 18px 36px rgba(0,0,0,.32);
-
-    }
-
-
-
-    .split{
-
-      display:grid;
-
-      grid-template-columns:1fr 1fr;
-
-      gap:20px;
-
-    }
-
-
-
-    .panel{
-
-      padding:26px;
-
-      border-radius:22px;
-
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-
-      border:1px solid var(--line);
-
-      box-shadow:var(--shadow);
-
-      transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
-
-    }
-
-
-
-    .panel:hover{
-
-      transform:translateY(-4px);
-
-      box-shadow:0 24px 56px rgba(0,0,0,.30);
-
-      border-color:rgba(139,92,255,.18);
-
-    }
-
-
-
-    .quotes{
-
-      display:grid;
-
-      grid-template-columns:repeat(2,1fr);
-
-      gap:14px;
-
-      margin-top:16px;
-
-    }
-
-
-
-    .quote{
-
-      padding:18px;
-
-      border-radius:16px;
-
-      background:rgba(255,255,255,.045);
-
-      border:1px solid var(--line);
-
-      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-
-    }
-
-
-
-    .quote:hover{
-
-      transform:translateY(-3px);
-
-      border-color:rgba(73,220,255,.18);
-
-      box-shadow:var(--shadow-soft);
-
-    }
-
-
-
-    .quote p{
-
-      margin:0 0 8px;
-
-      color:var(--muted);
-
-      line-height:1.65;
-
-    }
-
-
-
-    .quote small{
-
-      color:var(--soft);
-
-    }
-
-
-
-    .proof-box{
-
-      display:flex;
-
-      flex-direction:column;
-
-      gap:18px;
-
-    }
-
-
-
-    .proof-list{
-
-      display:grid;
-
-      gap:12px;
-
-    }
-
-
-
-    .proof-item{
-
-      padding:14px 16px;
-
-      border-radius:14px;
-
-      background:rgba(255,255,255,.045);
-
-      border:1px solid var(--line);
-
-      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-
-    }
-
-
-
-    .proof-item:hover{
-
-      transform:translateY(-3px);
-
-      border-color:rgba(73,220,255,.18);
-
-      box-shadow:var(--shadow-soft);
-
-    }
-
-
-
-    .proof-item strong{
-
-      display:block;
-
-      margin-bottom:6px;
-
-      color:var(--text);
-
-    }
-
-
-
-    .proof-item span{
-
-      color:var(--muted);
-
-      line-height:1.6;
-
-    }
-
-
-
-    .testimonials-grid{
-
-      display:grid;
-
-      grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
-
-      gap:22px;
-
-    }
-
-
-
-    .testimonial-card{
-
-      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-
-      border:1px solid rgba(255,255,255,.08);
-
-      border-radius:18px;
-
-      padding:22px;
-
-      transition:transform .4s ease, box-shadow .4s ease;
-
-      backdrop-filter:blur(8px);
-
-      box-shadow:var(--shadow);
-
-    }
-
-
-
-    .testimonial-card:hover{
-
-      transform:translateY(-6px);
-
-      box-shadow:0 18px 40px rgba(0,0,0,.35);
-
-    }
-
-
-
-    .stars{
-
-      color:#facc15;
-
-      font-size:18px;
-
-      margin-bottom:10px;
-
-    }
-
-
-
-    .testimonial-card p{
-
-      font-size:15px;
-
-      line-height:1.6;
-
-      margin:0 0 12px;
-
-      color:var(--text);
-
-    }
-
-
-
-    .testimonial-card span{
-
-      font-size:13px;
-
-      color:var(--muted);
-
-    }
-
-
-
-    .plans-grid{
-
-      display:grid;
-
-      grid-template-columns:repeat(3,1fr);
-
-      gap:18px;
-
-    }
-
-
-
-    .plan{
-
-      position:relative;
-
-      overflow:hidden;
-
-      padding:28px;
-
-      border-radius:20px;
-
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-
-      border:1px solid var(--line);
-
-      box-shadow:var(--shadow);
-
-      transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
-
-      display:flex;
-
-      flex-direction:column;
-
-      gap:16px;
-
-    }
-
-
-
-    .plan:hover{
-
-      transform:translateY(-6px);
-
-      box-shadow:0 28px 60px rgba(0,0,0,.34);
-
-    }
-
-
-
-    .plan.highlight{
-
-      transform:translateY(-6px);
-
-      border-color:rgba(47,124,255,.56);
-
-      box-shadow:0 0 0 1px rgba(47,124,255,.15), 0 22px 56px rgba(47,124,255,.18);
-
-    }
-
-
-
-    .plan.highlight:hover{
-
-      box-shadow:0 0 0 1px rgba(47,124,255,.22), 0 30px 70px rgba(47,124,255,.24), 0 0 30px rgba(139,92,255,.08);
-
-    }
-
-
-
-    .plan.highlight::before{
-
-      content:"";
-
-      position:absolute;
-
-      inset:0;
-
-      background:linear-gradient(135deg, rgba(47,124,255,.10), rgba(139,92,255,.08));
-
-    }
-
-
-
-    .badge{
-
-      display:inline-flex;
-
-      align-items:center;
-
-      gap:8px;
-
-      padding:8px 12px;
-
-      border-radius:999px;
-
-      background:rgba(228,190,114,.12);
-
-      color:#f3d49a;
-
-      border:1px solid rgba(228,190,114,.34);
-
-      font-size:.78rem;
-
-      font-weight:900;
-
-      margin-bottom:4px;
-
-      position:relative;
-
-      z-index:1;
-
-      animation:badgeFloat 3.5s ease-in-out infinite;
-
-      width:max-content;
-
-    }
-
-
-
-    @keyframes badgeFloat{
-
-      0%,100%{transform:translateY(0)}
-
-      50%{transform:translateY(-2px)}
-
-    }
-
-
-
-    .plan h3{
-
-      margin:0;
-
-      position:relative;
-
-      z-index:1;
-
-    }
-
-
-
-    .price{
-
-      font-size:2.1rem;
-
-      font-weight:900;
-
-      letter-spacing:-.03em;
-
-      margin:4px 0 6px;
-
-      position:relative;
-
-      z-index:1;
-
-    }
-
-
-
-    .plan ul{
-
-      padding-left:18px;
-
-      margin:0;
-
-      color:var(--muted);
-
-      line-height:1.85;
-
-      position:relative;
-
-      z-index:1;
-
-      flex:1;
-
-    }
-
-
-
-    .plan .btn{
-
-      margin-top:6px;
-
-      width:100%;
-
-      position:relative;
-
-      z-index:1;
-
-    }
-
-
-
-    .steps{
-
-      display:grid;
-
-      grid-template-columns:repeat(3,1fr);
-
-      gap:18px;
-
-    }
-
-
-
-    .step{
-
-      padding:24px;
-
-      border-radius:18px;
-
-      background:rgba(255,255,255,.045);
-
-      border:1px solid var(--line);
-
-      box-shadow:var(--shadow);
-
-      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-
-    }
-
-
-
-    .step:hover{
-
-      transform:translateY(-4px);
-
-      box-shadow:0 24px 50px rgba(0,0,0,.26);
-
-      border-color:rgba(73,220,255,.18);
-
-    }
-
-
-
-    .num{
-
-      width:48px;
-
-      height:48px;
-
-      border-radius:50%;
-
-      display:grid;
-
-      place-items:center;
-
-      background:linear-gradient(135deg, rgba(47,124,255,.18), rgba(139,92,255,.18));
-
-      border:1px solid rgba(255,255,255,.12);
-
-      font-weight:900;
-
-      margin-bottom:14px;
-
-      transition:transform .25s ease, box-shadow .25s ease;
-
-    }
-
-
-
-    .step:hover .num{
-
-      transform:scale(1.06);
-
-      box-shadow:var(--glow-blue);
-
-    }
-
-
-
-    .step h3{
-
-      margin:0 0 8px;
-
-    }
-
-
-
-    .step p{
-
-      margin:0;
-
-      color:var(--muted);
-
-      line-height:1.7;
-
-    }
-
-
-
-    .brief-grid{
-
-      display:grid;
-
-      grid-template-columns:repeat(4,1fr);
-
-      gap:16px;
-
-    }
-
-
-
-    .brief-card{
-
-      padding:20px;
-
-      border-radius:16px;
-
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-
-      border:1px solid var(--line);
-
-      box-shadow:var(--shadow);
-
-      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-
-    }
-
-
-
-    .brief-card:hover{
-
-      transform:translateY(-4px);
-
-      border-color:rgba(139,92,255,.18);
-
-      box-shadow:0 22px 48px rgba(0,0,0,.28);
-
-    }
-
-
-
-    .brief-card h4{
-
-      margin:0 0 10px;
-
-    }
-
-
-
-    .brief-card ul{
-
-      padding-left:18px;
-
-      margin:0;
-
-      color:var(--muted);
-
-      line-height:1.8;
-
-    }
-
-
-
-    .cta{
-
-      position:relative;
-
-      overflow:hidden;
-
-      text-align:center;
-
-      margin:90px 0 30px;
-
-      padding:54px 20px;
-
-      border-radius:24px;
-
-      background-image:
-
-        linear-gradient(rgba(11,11,15,.58), rgba(11,11,15,.76)),
-
-        url('./cta.jpg');
-
-      background-size:cover;
-
-      background-position:center;
-
-      background-repeat:no-repeat;
-
-      border:1px solid var(--line);
-
-      box-shadow:var(--shadow);
-
-      will-change:background-position;
-
-    }
-
-
-
-    .cta::before{
-
-      content:"";
-
-      position:absolute;
-
-      inset:0;
-
-      background:
-
-        radial-gradient(circle at 15% 35%, rgba(73,220,255,.10), transparent 24%),
-
-        radial-gradient(circle at 85% 65%, rgba(139,92,255,.12), transparent 24%);
-
-      pointer-events:none;
-
-      animation:ctaGlow 8s ease-in-out infinite;
-
-    }
-
-
-
-    @keyframes ctaGlow{
-
-      0%,100%{opacity:.72}
-
-      50%{opacity:1}
-
-    }
-
-
-
-    .cta h2{
-
-      margin:0 0 14px;
-
-      line-height:1.05;
-
-      font-size:clamp(1.9rem,4vw,2.8rem);
-
-      position:relative;
-
-      z-index:1;
-
-    }
-
-
-
-    .cta p{
-
-      margin:0 auto 24px;
-
-      color:var(--muted);
-
-      max-width:720px;
-
-      line-height:1.72;
-
-      position:relative;
-
-      z-index:1;
-
-    }
-
-
-
-    .cta-buttons{
-
-      display:flex;
-
-      justify-content:center;
-
-      gap:16px;
-
-      flex-wrap:wrap;
-
-      position:relative;
-
-      z-index:1;
-
-    }
-
-
-
-    .footer{
-
-      padding:40px 0 50px;
-
-      border-top:1px solid rgba(255,255,255,.05);
-
-      margin-top:50px;
-
-      text-align:center;
-
-      color:var(--soft);
-
-      position:relative;
-
-      overflow:hidden;
-
-    }
-
-
-
-    .footer-logo-wrap{
-
-      display:flex;
-
-      justify-content:center;
-
-      align-items:center;
-
-      margin-bottom:18px;
-
-    }
-
-
-
-    .footer-logo{
-
-      width:56px;
-
-      max-width:56px;
-
-      height:auto;
-
-      object-fit:contain;
-
-      opacity:0;
-
-      transform:translateY(40px) scale(.82) rotate(-6deg);
-
-      filter:drop-shadow(0 10px 24px rgba(0,0,0,.45));
-
-      transition:
-
-        opacity .9s ease,
-
-        transform 1s cubic-bezier(.2,.8,.2,1),
-
-        filter .9s ease;
-
-    }
-
-
-
-    .footer.visible .footer-logo{
-
-      opacity:1;
-
-      transform:translateY(0) scale(1) rotate(0deg);
-
-      filter:
-
-        drop-shadow(0 10px 24px rgba(0,0,0,.45))
-
-        drop-shadow(0 0 18px rgba(228,190,114,.22));
-
-      animation:footerLogoPulse 2.8s ease-in-out 1.1s infinite;
-
-    }
-
-
-
-    .footer-logo:hover{
-
-      transform:scale(1.10) rotate(2deg);
-
-      filter:
-
-        drop-shadow(0 12px 28px rgba(0,0,0,.45))
-
-        drop-shadow(0 0 26px rgba(228,190,114,.34));
-
-    }
-
-
-
-    @keyframes footerLogoPulse{
-
-      0%,100%{transform:translateY(0) scale(1) rotate(0deg)}
-
-      50%{transform:translateY(-3px) scale(1.04) rotate(0deg)}
-
-    }
-
-
-
-    .reveal{
-
-      opacity:0;
-
-      transform:translateY(28px) scale(.985);
-
-      transition:opacity .85s ease, transform .85s ease, filter .85s ease;
-
-      filter:blur(8px);
-
-    }
-
-
-
-    .reveal.visible{
-
-      opacity:1;
-
-      transform:none;
-
-      filter:none;
-
-    }
-
-
-
-    .reveal-left{
-
-      opacity:0;
-
-      transform:translateX(-32px);
-
-      transition:opacity .85s ease, transform .85s ease;
-
-    }
-
-
-
-    .reveal-right{
-
-      opacity:0;
-
-      transform:translateX(32px);
-
-      transition:opacity .85s ease, transform .85s ease;
-
-    }
-
-
-
-    .reveal-left.visible,
-
-    .reveal-right.visible{
-
-      opacity:1;
-
-      transform:none;
-
-    }
-
-
-
-    .delay-1{transition-delay:.08s}
-
-    .delay-2{transition-delay:.16s}
-
-    .delay-3{transition-delay:.24s}
-
-    .delay-4{transition-delay:.32s}
-
-
-
-    body.light-mode .page-loader{
-
-      background:
-
-        radial-gradient(circle at 30% 30%, rgba(73,220,255,.08), transparent 25%),
-
-        radial-gradient(circle at 70% 60%, rgba(139,92,255,.08), transparent 25%),
-
-        #f8fbff;
-
-    }
-
-
-
-    body.light-mode .nav{
-
-      background:rgba(255,255,255,.78);
-
-      border-bottom:1px solid rgba(15,23,42,.08);
-
-      backdrop-filter:blur(14px);
-
-    }
-
-
-
-    body.light-mode .nav.scrolled{
-
-      background:rgba(255,255,255,.92);
-
-      border-bottom:1px solid rgba(15,23,42,.10);
-
-      box-shadow:0 14px 40px rgba(15,23,42,.08);
-
-    }
-
-
-
-    body.light-mode .nav-links{color:var(--muted)}
-
-    body.light-mode .nav-links a:hover{color:var(--text)}
-
-    body.light-mode .brand{color:var(--text)}
-
-
-
-    body.light-mode .lang-switch{
-
-      background:rgba(255,255,255,.76);
-
-      border:1px solid rgba(15,23,42,.10);
-
-    }
-
-
-
-    body.light-mode .lang-switch button{color:var(--muted)}
-
-    body.light-mode .lang-switch button:hover{color:var(--text)}
-
-
-
-    body.light-mode .lang-switch button.active{
-
-      background:linear-gradient(45deg, rgba(73,220,255,.14), rgba(139,92,255,.14));
-
-      color:var(--text);
-
-      box-shadow:none;
-
-    }
-
-
-
-    body.light-mode .theme-toggle{
-
-      background:rgba(255,255,255,.85);
-
-      color:var(--text);
-
-      border:1px solid rgba(15,23,42,.10);
-
-      box-shadow:0 8px 20px rgba(15,23,42,.05);
-
-    }
-
-
-
-    body.light-mode .glass{
-
-      background:linear-gradient(180deg, rgba(255,255,255,.78), rgba(255,255,255,.62));
-
-      border:1px solid rgba(15,23,42,.08);
-
-      box-shadow:0 20px 50px rgba(15,23,42,.08);
-
-    }
-
-
-
-    body.light-mode .hero::before{
-
-      background:
-
-        radial-gradient(420px 260px at 14% 20%, rgba(73,220,255,.10), transparent 60%),
-
-        radial-gradient(320px 220px at 86% 18%, rgba(139,92,255,.10), transparent 62%),
-
-        linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,0));
-
-    }
-
-
-
-    body.light-mode .eyebrow{color:#b8862b}
-
-    body.light-mode h1{color:var(--text)}
-
-    body.light-mode .lead{color:var(--muted)}
-
-
-
-    body.light-mode .metric{
-
-      background:rgba(255,255,255,.72);
-
-      border:1px solid rgba(15,23,42,.08);
-
-      box-shadow:0 10px 24px rgba(15,23,42,.05);
-
-    }
-
-
-
-    body.light-mode .metric span{color:var(--muted)}
-
-
-
-    body.light-mode .hero-side{
-
-      box-shadow:0 20px 50px rgba(15,23,42,.10);
-
-    }
-
-
-
-    body.light-mode .hero-badge-box{
-
-      background:linear-gradient(180deg, rgba(255,255,255,.82), rgba(255,255,255,.65));
-
-      border:1px solid rgba(15,23,42,.10);
-
-      box-shadow:0 24px 50px rgba(15,23,42,.10);
-
-    }
-
-
-
-    body.light-mode .hero-badge-box h3{color:var(--text)}
-
-    body.light-mode .hero-badge-box p{color:var(--muted)}
-
-
-
-    body.light-mode .ticker-wrap{
-
-      background:linear-gradient(180deg, rgba(0,0,0,.03), rgba(0,0,0,.015));
-
-    }
-
-
-
-    body.light-mode .ticker span::after{
-
-      color:rgba(180,140,60,.70);
-
-    }
-
-
-
-    body.light-mode .card,
-
-    body.light-mode .panel,
-
-    body.light-mode .plan,
-
-    body.light-mode .step,
-
-    body.light-mode .brief-card,
-
-    body.light-mode .quote,
-
-    body.light-mode .testimonial-card{
-
-      background:linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.70));
-
-      border:1px solid rgba(15,23,42,.08);
-
-      box-shadow:0 18px 40px rgba(15,23,42,.06);
-
-    }
-
-
-
-    body.light-mode .proof-item{
-
-      background:rgba(255,255,255,.72);
-
-      border:1px solid rgba(15,23,42,.08);
-
-    }
-
-
-
-    body.light-mode .card p,
-
-    body.light-mode .panel p,
-
-    body.light-mode .plan ul,
-
-    body.light-mode .step p,
-
-    body.light-mode .brief-card ul,
-
-    body.light-mode .quote p,
-
-    body.light-mode .proof-item span,
-
-    body.light-mode .testimonial-card span{
-
-      color:var(--muted);
-
-    }
-
-
-
-    body.light-mode .card h3,
-
-    body.light-mode .panel h3,
-
-    body.light-mode .plan h3,
-
-    body.light-mode .step h3,
-
-    body.light-mode .brief-card h4,
-
-    body.light-mode .section-head h2,
-
-    body.light-mode .proof-item strong,
-
-    body.light-mode .testimonial-card p,
-
-    body.light-mode .price{
-
-      color:var(--text);
-
-    }
-
-
-
-    body.light-mode .icon,
-
-    body.light-mode .num{
-
-      background:linear-gradient(135deg, rgba(73,220,255,.12), rgba(139,92,255,.12));
-
-      border:1px solid rgba(15,23,42,.08);
-
-      color:var(--text);
-
-    }
-
-
-
-    body.light-mode .plan.highlight{
-
-      border-color:rgba(47,124,255,.28);
-
-      box-shadow:0 0 0 1px rgba(47,124,255,.08), 0 22px 46px rgba(47,124,255,.10);
-
-    }
-
-
-
-    body.light-mode .plan.highlight::before{
-
-      background:linear-gradient(135deg, rgba(47,124,255,.05), rgba(139,92,255,.05));
-
-    }
-
-
-
-    body.light-mode .btn{
-
-      border:1px solid rgba(15,23,42,.10);
-
-      box-shadow:0 8px 20px rgba(15,23,42,.06);
-
-    }
-
-
-
-    body.light-mode .btn-primary{
-
-      background:linear-gradient(135deg, #2f7cff, #8b5cff);
-
-      color:#ffffff;
-
-      border-color:transparent;
-
-    }
-
-
-
-    body.light-mode .btn-primary:hover{
-
-      box-shadow:0 16px 32px rgba(47,124,255,.22);
-
-    }
-
-
-
-    body.light-mode .btn-secondary{
-
-      background:rgba(255,255,255,.85);
-
-      color:var(--text);
-
-      border:1px solid rgba(15,23,42,.10);
-
-    }
-
-
-
-    body.light-mode .btn-secondary:hover{
-
-      background:#ffffff;
-
-      border-color:rgba(73,220,255,.24);
-
-      box-shadow:0 12px 24px rgba(15,23,42,.08);
-
-    }
-
-
-
-    body.light-mode .cta{
-
-      border:1px solid rgba(15,23,42,.08);
-
-      box-shadow:0 20px 50px rgba(15,23,42,.08);
-
-    }
-
-
-
-    body.light-mode .cta::before{
-
-      background:
-
-        radial-gradient(circle at 15% 35%, rgba(73,220,255,.10), transparent 24%),
-
-        radial-gradient(circle at 85% 65%, rgba(139,92,255,.10), transparent 24%);
-
-    }
-
-
-
-    body.light-mode .cta h2{color:#ffffff}
-
-    body.light-mode .cta p{color:rgba(255,255,255,.88)}
-
-
-
-    body.light-mode .footer{
-
-      border-top:1px solid rgba(15,23,42,.08);
-
-      color:var(--soft);
-
-    }
-
-
-
-    @media (max-width:1024px){
-
-      .hero-grid,
-
-      .split,
-
-      .plans-grid,
-
-      .steps{
-
-        grid-template-columns:1fr;
-
-      }
-
-
-
-      .brief-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-      }
-
-
-
-      .card:hover{
-
-        transform:translateY(-4px);
-
-      }
-
-    }
-
-
-
-    @media (max-width:720px){
-
-      .metrics,
-
-      .quotes,
-
-      .brief-grid{
-
-        grid-template-columns:1fr;
-
-      }
-
-
-
-      .nav-inner{
-
-        padding:10px 0;
-
-      }
-
-
-
-      .nav-links{
-
-        font-size:13px;
-
-      }
-
-
-
-      .hero-copy{
-
-        padding:28px 22px;
-
-      }
-
-
-
-      h1{
-
-        max-width:none;
-
-      }
-
-
-
-      .hero-side{
-
-        min-height:380px;
-
-        padding:20px;
-
-      }
-
-
-
-      .service-image{
-
-        height:200px;
-
-      }
-
-
-
-      .page-loader{
-
-        display:none;
-
-      }
-
-    }
-
-
-
-    @media (prefers-reduced-motion: reduce){
-
-      *,
-
-      *::before,
-
-      *::after{
-
-        animation:none !important;
-
-        transition:none !important;
-
-        scroll-behavior:auto !important;
-
-      }
-
-    }
-
-  </style>
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Tu Espacio Creativo","url":"https://tuespaciocreativo.com/","telephone":"+1-786-354-8796","email":"wperezmedero@gmail.com","areaServed":"Miami-Dade, Florida"}</script>
+
+<style>
+/* ═══════ LIGHT MODE (default) ═══════ */
+:root {
+  --bg:      #F3EDE0;
+  --bg2:     #E9E0CE;
+  --bg3:     #DDD2BC;
+  --surf:    #FDFAF3;
+  --surf2:   #F6F0E4;
+  --dark:    #0D0B09;
+  --dark2:   #1A1612;
+  --txt:     #0D0B09;
+  --txt2:    #3A3020;
+  --mut:     #68604F;
+  --fnt:     #9C9080;
+  --ln:      rgba(13,11,9,.13);
+  --gold:    #A87420;
+  --goldh:   #C48E28;
+  --goldp:   #ECC864;
+  --inv:     #F3EDE0;
+  --inv60:   rgba(243,237,224,.60);
+  --serif: 'Playfair Display', Georgia, serif;
+  --cond:  'Barlow Condensed', sans-serif;
+  --sans:  'Barlow', sans-serif;
+  --nav-h: 68px;
+  --max:   1180px;
+}
+
+/* ═══════ DARK MODE ═══════ */
+body.dark {
+  --bg:   #0D0B09;
+  --bg2:  #171410;
+  --bg3:  #1E1A14;
+  --surf: #1A1612;
+  --surf2:#201C16;
+  --txt:  #F3EDE0;
+  --txt2: #C8C0A8;
+  --mut:  #9C9080;
+  --fnt:  #68604F;
+  --ln:   rgba(243,237,224,.09);
+}
+
+/* ═══════ BASE ═══════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--txt);overflow-x:hidden;cursor:none;transition:background .3s,color .3s}
+a{color:inherit;text-decoration:none;cursor:none}
+img{display:block;max-width:100%}
+@media(pointer:coarse){body,a,button{cursor:auto!important}#cur,#crng{display:none!important}}
+
+/* ═══════ CURSOR ═══════ */
+#cur{position:fixed;width:9px;height:9px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .2s,height .2s;mix-blend-mode:multiply}
+#crng{position:fixed;width:32px;height:32px;border:1.5px solid var(--gold);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .25s,height .25s,opacity .25s;opacity:.42}
+body.ch #cur{width:20px;height:20px}
+body.ch #crng{width:48px;height:48px;opacity:.2}
+
+/* ═══════ SCROLL PROGRESS ═══════ */
+#sbar{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--gold),var(--goldp));z-index:10000;transition:width .08s linear}
+
+/* ═══════ LOADER ═══════ */
+#ldr{position:fixed;inset:0;z-index:9990;background:#0D0B09;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;transition:opacity .65s,visibility .65s}
+#ldr.done{opacity:0;visibility:hidden;pointer-events:none}
+.ld-name{font-family:var(--serif);font-size:clamp(1.4rem,4vw,2rem);color:#F3EDE0;letter-spacing:.04em}
+.ld-name span{display:inline-block;opacity:0;transform:translateY(18px);animation:ldUp .5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes ldUp{to{opacity:1;transform:none}}
+.ld-bar{width:0;height:1px;background:var(--gold);animation:ldG 1s ease .5s forwards}
+@keyframes ldG{to{width:160px}}
+.ld-sub{font-family:var(--cond);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);opacity:0;animation:ldF .5s ease 1s forwards}
+@keyframes ldF{to{opacity:1}}
+
+/* ═══════ NAV ═══════ */
+.nav{position:sticky;top:0;z-index:80;height:var(--nav-h);display:flex;align-items:center;background:rgba(243,237,224,.93);backdrop-filter:blur(18px);border-bottom:1px solid var(--ln);transition:background .3s,box-shadow .3s}
+body.dark .nav{background:rgba(13,11,9,.92)}
+.nav.sc{box-shadow:0 2px 28px rgba(13,11,9,.08)}
+body.dark .nav.sc{box-shadow:0 2px 28px rgba(0,0,0,.3)}
+.ni{width:min(var(--max),calc(100% - 40px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand img{height:38px;width:auto;object-fit:contain}
+.nl{display:flex;align-items:center;gap:26px;font-family:var(--cond);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.nl a{position:relative;transition:color .2s}
+.nl a:hover{color:var(--txt)}
+.nl a::after{content:'';position:absolute;left:0;bottom:-3px;width:0;height:1px;background:var(--gold);transition:width .22s}
+.nl a:hover::after{width:100%}
+.nc{display:flex;gap:10px;align-items:center}
+.lpill{display:flex;gap:2px;border:1px solid var(--ln);border-radius:999px;overflow:hidden;font-family:var(--cond);font-size:11px;font-weight:700;letter-spacing:.1em}
+.lpill button{border:none;background:transparent;color:var(--mut);padding:6px 12px;cursor:none;transition:background .2s,color .2s}
+.lpill button.on{background:var(--gold);color:#fff}
+.ibtn{border:1px solid var(--ln);background:transparent;color:var(--txt);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:15px;cursor:none;transition:border-color .2s,transform .22s}
+.ibtn:hover{border-color:var(--gold);transform:rotate(18deg)}
+
+/* ═══════ WRAP ═══════ */
+.w{width:min(var(--max),calc(100% - 40px));margin:auto}
+
+/* ═══════ HERO ═══════ */
+.hero{min-height:calc(100vh - var(--nav-h));display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+
+/* LEFT */
+.hl{
+  background:var(--surf);
+  border-right:1px solid var(--ln);
+  padding:72px 52px 72px max(40px,calc((100vw - var(--max))/2 + 40px));
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;z-index:2;
+}
+body.dark .hl{background:var(--bg)}
+
+.eyebrow{font-family:var(--cond);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:22px;opacity:0;animation:sup .7s ease 1.1s forwards}
+.eyebrow::before{content:'';width:26px;height:1px;background:var(--gold)}
+@keyframes sup{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+.htitle{font-family:var(--serif);font-size:clamp(2.5rem,5vw,4.4rem);line-height:1.03;letter-spacing:-.022em;font-weight:900;max-width:13ch;margin-bottom:22px;opacity:0;animation:sup .75s ease 1.3s forwards}
+.htitle em{font-style:italic;color:var(--gold)}
+
+.hdesc{font-size:1.02rem;line-height:1.76;color:var(--mut);max-width:44ch;margin-bottom:34px;font-weight:300;opacity:0;animation:sup .75s ease 1.5s forwards}
+
+.hbtns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:0;opacity:0;animation:sup .75s ease 1.7s forwards}
+
+.hmets{display:flex;gap:32px;margin-top:44px;padding-top:32px;border-top:1px solid var(--ln);opacity:0;animation:sup .7s ease 1.9s forwards}
+.hmet strong{display:block;font-family:var(--serif);font-size:1.85rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:3px}
+.hmet span{font-family:var(--cond);font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--mut)}
+
+/* RIGHT */
+.hr{position:relative;overflow:hidden;background:var(--dark)}
+.himg{position:absolute;inset:0;background:url('./hero.jpg') center/cover no-repeat;will-change:transform}
+.himg::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(13,11,9,.62) 0%,transparent 55%),linear-gradient(to right,rgba(243,237,224,.12) 0%,transparent 28%)}
+.hcard{position:absolute;bottom:28px;left:24px;right:24px;z-index:2;padding:20px 24px;background:rgba(13,11,9,.72);backdrop-filter:blur(18px);border:1px solid rgba(243,237,224,.14);border-radius:8px}
+.hcard h3{font-family:var(--serif);font-size:1.1rem;color:#F3EDE0;margin-bottom:7px}
+.hcard p{font-size:.88rem;color:rgba(243,237,224,.62);line-height:1.65;font-weight:300}
+
+/* ═══════ BUTTONS ═══════ */
+.btn-p{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;background:var(--gold);color:#fff;font-family:var(--cond);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:none;border-radius:5px;cursor:none;position:relative;overflow:hidden;transition:background .22s,transform .22s,box-shadow .22s}
+.btn-p:hover{background:var(--goldh);transform:translateY(-2px);box-shadow:0 10px 26px rgba(168,116,32,.35)}
+.btn-p::before{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.2) 50%,transparent 70%);transform:translateX(-120%);transition:transform .52s}
+.btn-p:hover::before{transform:translateX(120%)}
+.btn-o{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;background:transparent;color:var(--txt);font-family:var(--cond);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:1.5px solid var(--ln);border-radius:5px;cursor:none;transition:border-color .22s,transform .22s,background .22s}
+.btn-o:hover{border-color:var(--gold);background:rgba(168,116,32,.07);transform:translateY(-2px)}
+
+/* ═══════ TICKER ═══════ */
+.ticker-wrap{border-top:1px solid var(--ln);border-bottom:1px solid var(--ln);overflow:hidden;background:var(--dark2)}
+body.dark .ticker-wrap{background:var(--bg2)}
+.ticker-track{display:flex;align-items:center;white-space:nowrap;animation:tick 22s linear infinite;padding:13px 0}
+.ticker-item{display:inline-flex;align-items:center;gap:18px;padding:0 22px;font-family:var(--cond);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(243,237,224,.52)}
+.ticker-item::after{content:'✦';font-size:8px;color:var(--gold);margin-left:5px}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ═══════ SECTIONS ═══════ */
+section{padding:90px 0;position:relative;overflow:hidden}
+.secn{position:absolute;top:32px;right:32px;font-family:var(--serif);font-size:clamp(5rem,11vw,9rem);font-weight:900;color:transparent;-webkit-text-stroke:1px var(--ln);line-height:1;pointer-events:none;user-select:none}
+.lbl{font-family:var(--cond);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.lbl::before{content:'';width:26px;height:1px;background:var(--gold)}
+.sh2{font-family:var(--serif);font-size:clamp(1.9rem,3.8vw,3.2rem);line-height:1.05;letter-spacing:-.022em;font-weight:900}
+.sh2 em{font-style:italic;color:var(--gold)}
+
+/* ═══════ SERVICES ═══════ */
+#services{background:var(--bg2)}
+body.dark #services{background:var(--bg2)}
+.srv-hd{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:50px}
+.srv-hd p{font-size:1rem;line-height:1.75;color:var(--mut);font-weight:300}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border:1px solid var(--ln);border-radius:8px;overflow:hidden;background:var(--ln)}
+.sc2{background:var(--surf);position:relative;overflow:hidden;transition:background .25s}
+body.dark .sc2{background:var(--surf2)}
+.sc2:hover{background:var(--gold)}
+.sc2-img{height:195px;overflow:hidden}
+.sc2-img img{width:100%;height:100%;object-fit:cover;transition:transform .55s cubic-bezier(.2,.8,.2,1),filter .4s;filter:grayscale(20%)}
+.sc2:hover .sc2-img img{transform:scale(1.07);filter:none}
+.sc2-body{padding:20px 18px 24px}
+.sc2-ico{font-size:1.25rem;margin-bottom:10px;display:block}
+.sc2-body h3{font-family:var(--cond);font-size:.98rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:6px;transition:color .22s}
+.sc2:hover .sc2-body h3{color:#fff}
+.sc2-body p{font-size:.86rem;line-height:1.65;color:var(--mut);font-weight:300;transition:color .22s}
+.sc2:hover .sc2-body p{color:rgba(255,255,255,.8)}
+.sc2-arr{position:absolute;bottom:18px;right:16px;font-size:.95rem;color:var(--gold);transition:transform .22s,color .22s}
+.sc2:hover .sc2-arr{transform:translate(3px,-3px);color:#fff}
+
+/* ═══════ WHY ═══════ */
+#why{background:var(--bg)}
+.wg{display:grid;grid-template-columns:1fr 1fr;gap:1px;border:1px solid var(--ln);border-radius:8px;overflow:hidden}
+.wl{padding:52px;background:var(--dark2);color:#F3EDE0}
+body.dark .wl{background:var(--bg3)}
+.wl .lbl{color:rgba(243,237,224,.55)}
+.wl .lbl::before{background:rgba(243,237,224,.35)}
+.wl .sh2{margin-bottom:14px}
+.wl .desc{font-size:.97rem;line-height:1.76;color:rgba(243,237,224,.56);font-weight:300;margin-bottom:32px}
+.wqs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(243,237,224,.07)}
+.wq{padding:20px;background:rgba(243,237,224,.03);transition:background .22s}
+.wq:hover{background:rgba(168,116,32,.10)}
+.wq p{font-size:.87rem;line-height:1.65;color:rgba(243,237,224,.66);margin-bottom:8px;font-weight:300}
+.wq small{font-family:var(--cond);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.wr{padding:52px;background:var(--surf)}
+body.dark .wr{background:var(--surf2)}
+.wr h3{font-family:var(--serif);font-size:clamp(1.25rem,2.2vw,1.8rem);line-height:1.14;font-weight:700;margin-bottom:11px}
+.wr .desc{font-size:.93rem;line-height:1.76;color:var(--mut);font-weight:300;margin-bottom:26px}
+.pi{display:flex;gap:15px;align-items:flex-start;padding:17px 0;border-bottom:1px solid var(--ln)}
+.pi:last-child{border-bottom:none}
+.pin{font-family:var(--serif);font-size:.98rem;font-weight:700;color:var(--gold);min-width:24px;padding-top:1px}
+.pi strong{display:block;font-size:.92rem;font-weight:600;margin-bottom:3px}
+.pi span{font-size:.86rem;line-height:1.6;color:var(--mut);font-weight:300}
+
+/* ═══════ TESTIMONIALS ═══════ */
+#testimonials{background:var(--bg2)}
+body.dark #testimonials{background:var(--bg2)}
+.th2{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:40px;gap:20px}
+.th2 p{font-size:.92rem;color:var(--mut);font-weight:300;max-width:26ch;text-align:right;line-height:1.65}
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;border:1px solid var(--ln);border-radius:8px;overflow:hidden;background:var(--ln)}
+/* KEY FIX: testimonial cards must have strong visible background in light mode */
+.tc{background:var(--surf);padding:32px 28px;position:relative;transition:background .25s}
+body.dark .tc{background:var(--surf2)}
+.tc:hover{background:var(--dark2)}
+body.dark .tc:hover{background:var(--bg3)}
+.stars{font-size:12px;letter-spacing:3px;color:var(--gold);margin-bottom:14px}
+.tc blockquote{font-family:var(--serif);font-size:1rem;line-height:1.65;font-style:italic;color:var(--txt);margin-bottom:16px;transition:color .25s}
+.tc:hover blockquote{color:#F3EDE0}
+.tc cite{font-family:var(--cond);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);font-style:normal;transition:color .25s}
+.tc:hover cite{color:rgba(243,237,224,.48)}
+.tq-ico{position:absolute;top:22px;right:22px;font-size:2.8rem;line-height:1;font-family:var(--serif);color:var(--ln);pointer-events:none;transition:color .25s}
+.tc:hover .tq-ico{color:rgba(168,116,32,.18)}
+
+/* ═══════ PLANS ═══════ */
+#plans{background:var(--bg)}
+.ph{text-align:center;max-width:580px;margin:0 auto 48px}
+.ph .sh2{margin-bottom:11px}
+.ph p{font-size:.97rem;color:var(--mut);font-weight:300;line-height:1.7}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;border:1px solid var(--ln);border-radius:8px;overflow:hidden;background:var(--ln)}
+.plan{background:var(--surf);padding:40px 32px;display:flex;flex-direction:column;transition:background .25s}
+body.dark .plan{background:var(--surf2)}
+.plan.feat{background:var(--dark2);color:#F3EDE0}
+body.dark .plan.feat{background:var(--bg3)}
+.pbadge{display:inline-flex;font-family:var(--cond);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;background:var(--gold);color:#fff;padding:5px 11px;border-radius:999px;margin-bottom:18px;width:max-content}
+.pname{font-family:var(--cond);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-bottom:6px}
+.plan.feat .pname{color:rgba(243,237,224,.58)}
+.pprice{font-family:var(--serif);font-size:2.9rem;font-weight:900;line-height:1;letter-spacing:-.03em;margin-bottom:24px}
+.pdiv{height:1px;background:var(--ln);margin-bottom:22px}
+.plan.feat .pdiv{background:rgba(243,237,224,.11)}
+.plan ul{list-style:none;display:flex;flex-direction:column;gap:10px;flex:1;margin-bottom:28px}
+.plan ul li{display:flex;gap:10px;font-size:.89rem;line-height:1.55;color:var(--mut);font-weight:300}
+.plan.feat ul li{color:rgba(243,237,224,.68)}
+.plan ul li::before{content:'—';color:var(--gold);flex-shrink:0;font-weight:600}
+.plan.feat ul li::before{color:var(--goldp)}
+
+/* ═══════ PROCESS ═══════ */
+#process{background:var(--bg2)}
+body.dark #process{background:var(--bg2)}
+.proc-hd{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:48px}
+.proc-hd p{font-size:1rem;line-height:1.76;color:var(--mut);font-weight:300}
+.sr{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;border:1px solid var(--ln);border-radius:8px;overflow:hidden;background:var(--ln)}
+.stc{background:var(--surf);padding:40px 32px;transition:background .25s}
+body.dark .stc{background:var(--surf2)}
+.stc:hover{background:var(--dark2);color:#F3EDE0}
+.stn{font-family:var(--serif);font-size:3rem;font-weight:900;line-height:1;color:var(--ln);margin-bottom:20px;transition:color .25s}
+.stc:hover .stn{color:var(--gold)}
+.stc h3{font-family:var(--cond);font-size:1.02rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:9px}
+.stc p{font-size:.89rem;line-height:1.7;color:var(--mut);font-weight:300;transition:color .25s}
+.stc:hover p{color:rgba(243,237,224,.60)}
+
+/* ═══════ BRIEF ═══════ */
+#brief{background:var(--bg)}
+.bh{text-align:center;max-width:540px;margin:0 auto 44px}
+.bh .sh2{margin-bottom:11px}
+.bh p{font-size:.97rem;color:var(--mut);font-weight:300;line-height:1.7}
+.bg2{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border:1px solid var(--ln);border-radius:8px;overflow:hidden;background:var(--ln)}
+.bc{background:var(--surf2);padding:28px 22px;transition:background .25s}
+body.dark .bc{background:var(--surf)}
+.bc:hover{background:var(--gold)}
+.bc h4{font-family:var(--cond);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;transition:color .2s}
+.bc:hover h4{color:rgba(255,255,255,.7)}
+.bc ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.bc ul li{font-size:.87rem;line-height:1.55;color:var(--mut);font-weight:300;display:flex;gap:7px;transition:color .2s}
+.bc:hover ul li{color:rgba(255,255,255,.85)}
+.bc ul li::before{content:'·';color:var(--gold);transition:color .2s}
+.bc:hover ul li::before{color:rgba(255,255,255,.5)}
+
+/* ═══════ CTA ═══════ */
+.cta-sec{position:relative;overflow:hidden}
+.cta-bg{position:absolute;inset:0;background:url('./cta.jpg') center/cover no-repeat}
+.cta-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(13,11,9,.90) 50%,rgba(13,11,9,.68) 100%)}
+.cta-in{position:relative;z-index:2;padding:100px 0}
+.cta-in .lbl{color:rgba(243,237,224,.52)}
+.cta-in .lbl::before{background:rgba(243,237,224,.32)}
+.cta-in h2{font-family:var(--serif);font-size:clamp(1.9rem,4.5vw,3.8rem);line-height:1.04;letter-spacing:-.025em;font-weight:900;color:#F3EDE0;max-width:16ch;margin-bottom:14px}
+.cta-in h2 em{font-style:italic;color:var(--goldp)}
+.cta-in p{font-size:1.01rem;line-height:1.76;color:rgba(243,237,224,.60);max-width:46ch;font-weight:300;margin-bottom:32px}
+.cta-btns{display:flex;gap:13px;flex-wrap:wrap}
+
+/* ═══════ FOOTER ═══════ */
+.footer{background:var(--dark2);color:#F3EDE0;padding:48px 0 36px;border-top:1px solid rgba(243,237,224,.05)}
+.fi{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer img{height:38px;width:auto;object-fit:contain}
+.fg{font-family:var(--serif);font-size:.86rem;font-style:italic;color:var(--gold)}
+.fc{font-family:var(--cond);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,237,224,.30)}
+
+/* ═══════ REVEAL ═══════ */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .68s ease,transform .68s ease}
+.rvl{opacity:0;transform:translateX(-24px);transition:opacity .68s ease,transform .68s ease}
+.rvr{opacity:0;transform:translateX(24px);transition:opacity .68s ease,transform .68s ease}
+.rv.on,.rvl.on,.rvr.on{opacity:1;transform:none}
+.d1{transition-delay:.05s}.d2{transition-delay:.12s}.d3{transition-delay:.19s}.d4{transition-delay:.26s}
+
+/* ═══════ WHATSAPP FLOAT ═══════ */
+#wa-float{
+  position:fixed;bottom:26px;right:26px;z-index:8000;
+  width:56px;height:56px;border-radius:50%;
+  background:linear-gradient(135deg,#25D366,#128C7E);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 26px rgba(37,211,102,.40);
+  cursor:none;
+  transition:transform .22s,box-shadow .22s;
+  animation:waPop 2.8s ease-in-out infinite;
+}
+#wa-float:hover{transform:scale(1.10);box-shadow:0 10px 34px rgba(37,211,102,.55)}
+@keyframes waPop{0%,100%{box-shadow:0 6px 26px rgba(37,211,102,.40)}50%{box-shadow:0 6px 26px rgba(37,211,102,.40),0 0 0 9px rgba(37,211,102,.10)}}
+#wa-float svg{width:26px;height:26px;fill:#fff}
+.wa-tip{
+  position:fixed;bottom:34px;right:92px;z-index:7999;
+  background:var(--dark2);color:#F3EDE0;
+  font-family:var(--cond);font-size:12px;font-weight:600;letter-spacing:.08em;
+  padding:7px 13px;border-radius:6px;white-space:nowrap;
+  opacity:0;pointer-events:none;transition:opacity .22s;
+  box-shadow:0 4px 14px rgba(0,0,0,.22);
+}
+.wa-tip::after{content:'';position:absolute;right:-5px;top:50%;transform:translateY(-50%);border:5px solid transparent;border-right:none;border-left-color:var(--dark2)}
+#wa-float:hover+.wa-tip{opacity:1}
+
+/* ═══════ AI BUTTON ═══════ */
+#ai-btn{
+  position:fixed;bottom:94px;right:26px;z-index:8000;
+  width:52px;height:52px;border-radius:50%;
+  background:linear-gradient(135deg,var(--dark2),#28221A);
+  border:1.5px solid var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 5px 22px rgba(168,116,32,.28);
+  cursor:none;
+  transition:transform .22s,box-shadow .22s;
+}
+#ai-btn:hover{transform:scale(1.08);box-shadow:0 9px 30px rgba(168,116,32,.42)}
+#ai-btn svg{width:22px;height:22px}
+.ai-tip{
+  position:fixed;bottom:102px;right:88px;z-index:7999;
+  background:var(--dark2);color:#F3EDE0;
+  font-family:var(--cond);font-size:12px;font-weight:600;letter-spacing:.08em;
+  padding:7px 13px;border-radius:6px;white-space:nowrap;
+  opacity:0;pointer-events:none;transition:opacity .22s;
+  box-shadow:0 4px 14px rgba(0,0,0,.22);
+}
+.ai-tip::after{content:'';position:absolute;right:-5px;top:50%;transform:translateY(-50%);border:5px solid transparent;border-right:none;border-left-color:var(--dark2)}
+#ai-btn:hover+.ai-tip{opacity:1}
+
+/* ═══════ AI WINDOW ═══════ */
+#ai-win{
+  position:fixed;bottom:160px;right:20px;z-index:7990;
+  width:355px;max-width:calc(100vw - 32px);
+  background:var(--bg);
+  border:1px solid var(--ln);border-radius:16px;
+  box-shadow:0 20px 56px rgba(0,0,0,.20);
+  display:flex;flex-direction:column;overflow:hidden;
+  opacity:0;visibility:hidden;pointer-events:none;
+  transform:translateY(14px) scale(.97);
+  transition:opacity .28s ease,transform .28s ease,visibility .28s ease;
+}
+body.dark #ai-win{background:var(--bg2)}
+#ai-win.open{opacity:1;visibility:visible;pointer-events:all;transform:none}
+.ai-hd{padding:15px 17px;background:linear-gradient(135deg,var(--dark2),#28221A);display:flex;align-items:center;gap:11px}
+.ai-av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--goldh));display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.95rem}
+.ai-hd-txt h4{font-family:var(--serif);font-size:.92rem;color:#F3EDE0;margin-bottom:1px}
+.ai-hd-txt p{font-family:var(--cond);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(243,237,224,.48)}
+.ai-x{margin-left:auto;background:transparent;border:none;color:rgba(243,237,224,.48);font-size:1.1rem;cursor:none;line-height:1;transition:color .18s}
+.ai-x:hover{color:#F3EDE0}
+
+.ai-msgs{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:11px;max-height:300px;min-height:160px;scroll-behavior:smooth}
+.ai-msgs::-webkit-scrollbar{width:4px}
+.ai-msgs::-webkit-scrollbar-thumb{background:var(--ln);border-radius:2px}
+
+.msg{max-width:88%;padding:9px 13px;border-radius:12px;font-size:.87rem;line-height:1.62;font-weight:400;word-break:break-word}
+.msg.bot{background:var(--surf2);color:var(--txt);border-bottom-left-radius:3px;align-self:flex-start}
+body.dark .msg.bot{background:var(--surf)}
+.msg.usr{background:var(--gold);color:#fff;border-bottom-right-radius:3px;align-self:flex-end}
+.msg.typ{background:var(--surf2);padding:11px 15px;align-self:flex-start}
+body.dark .msg.typ{background:var(--surf)}
+.dots{display:inline-flex;gap:4px;align-items:center}
+.dots span{width:5px;height:5px;background:var(--mut);border-radius:50%;animation:db .9s ease infinite}
+.dots span:nth-child(2){animation-delay:.18s}
+.dots span:nth-child(3){animation-delay:.36s}
+@keyframes db{0%,60%,100%{transform:translateY(0);opacity:.45}30%{transform:translateY(-5px);opacity:1}}
+
+.ai-qs{padding:0 12px 9px;display:flex;flex-wrap:wrap;gap:6px}
+.ai-q{font-family:var(--cond);font-size:11px;font-weight:600;letter-spacing:.07em;padding:5px 11px;border-radius:999px;border:1px solid var(--gold);color:var(--gold);background:transparent;cursor:none;transition:background .2s,color .2s}
+.ai-q:hover{background:var(--gold);color:#fff}
+
+.ai-inp{display:flex;border-top:1px solid var(--ln)}
+.ai-inp input{flex:1;padding:12px 14px;background:transparent;border:none;outline:none;font-family:var(--sans);font-size:.87rem;color:var(--txt)}
+.ai-inp input::placeholder{color:var(--fnt)}
+.ai-send{padding:0 16px;background:var(--gold);border:none;color:#fff;cursor:none;display:flex;align-items:center;font-size:.95rem;transition:background .18s}
+.ai-send:hover{background:var(--goldh)}
+
+/* ═══════ RESPONSIVE ═══════ */
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr}
+  .hr{min-height:360px}
+  .hl{padding:56px 28px}
+  .srv-hd,.proc-hd{grid-template-columns:1fr;gap:16px}
+  .sg{grid-template-columns:repeat(2,1fr)}
+  .wg{grid-template-columns:1fr}
+  .pg,.tg,.sr{grid-template-columns:1fr}
+  .bg2{grid-template-columns:repeat(2,1fr)}
+  .th2{flex-direction:column;align-items:flex-start;gap:10px}
+  .th2 p{text-align:left}
+}
+@media(max-width:680px){
+  section{padding:64px 0}
+  .sg,.bg2{grid-template-columns:1fr}
+  .hmets{flex-wrap:wrap;gap:20px}
+  .nl a{display:none}
+  #ai-win{right:8px;bottom:150px;width:calc(100vw - 16px)}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
 </head>
 
-<body class="light-mode">
+<body>
+<div id="cur"></div>
+<div id="crng"></div>
+<div id="sbar"></div>
 
-
-
-  <div class="page-loader" id="pageLoader">
-
-    <div class="loader-core"></div>
-
+<!-- LOADER -->
+<div id="ldr">
+  <div class="ld-name">
+    <span style="animation-delay:.00s">T</span><span style="animation-delay:.05s">u</span>&nbsp;<span style="animation-delay:.11s">E</span><span style="animation-delay:.16s">s</span><span style="animation-delay:.21s">p</span><span style="animation-delay:.26s">a</span><span style="animation-delay:.31s">c</span><span style="animation-delay:.36s">i</span><span style="animation-delay:.41s">o</span>&nbsp;<span style="animation-delay:.48s">C</span><span style="animation-delay:.53s">r</span><span style="animation-delay:.58s">e</span><span style="animation-delay:.63s">a</span><span style="animation-delay:.68s">t</span><span style="animation-delay:.73s">i</span><span style="animation-delay:.78s">v</span><span style="animation-delay:.83s">o</span>
   </div>
+  <div class="ld-bar"></div>
+  <div class="ld-sub">Diseño · Branding · Presencia digital</div>
+</div>
 
-
-
-  <nav class="nav" id="navbar">
-
-    <div class="container nav-inner">
-
-      <div class="brand">
-
-        <img src="./logo.jpeg" alt="Tu Espacio Creativo" class="logo-nav">
-
-      </div>
-
-
-
-      <div class="nav-links">
-
-        <a href="#services" data-i18n="nav.services">Servicios</a>
-
-        <a href="#plans" data-i18n="nav.pricing">Planes</a>
-
-        <a href="#process" data-i18n="nav.process">Proceso</a>
-
-        <a href="#brief" data-i18n="nav.brief">Brief</a>
-
-
-
-        <div class="lang-switch">
-
-          <button id="btn-es" class="active">ES</button>
-
-          <button id="btn-en">EN</button>
-
-        </div>
-
-
-
-        <button id="theme-toggle" class="theme-toggle">Modo oscuro</button>
-
-      </div>
-
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="ni">
+    <a href="#top" class="brand"><img src="./logo.jpeg" alt="Tu Espacio Creativo"></a>
+    <div class="nl">
+      <a href="#services" data-k="nav.services">Servicios</a>
+      <a href="#plans" data-k="nav.pricing">Planes</a>
+      <a href="#process" data-k="nav.process">Proceso</a>
+      <a href="#brief" data-k="nav.brief">Brief</a>
     </div>
-
-  </nav>
-
-
-
-  <main id="top">
-
-    <section class="hero" id="heroSection">
-
-      <div class="container hero-grid">
-
-        <div class="glass hero-copy reveal-left">
-
-          <div class="eyebrow" data-i18n="hero.eyebrow">Agencia creativa premium</div>
-
-
-
-          <h1 data-i18n="hero.title">Haz que tu negocio se vea serio, moderno y listo para vender</h1>
-
-
-
-          <p class="lead" data-i18n="hero.desc">Creamos landing pages, logos, redes sociales, tarjetas digitales y presencia visual para negocios locales que quieren verse mejor y conseguir más clientes.</p>
-
-
-
-          <div class="hero-actions">
-
-            <a href="https://wa.me/17863548796?text=Hola%20quiero%20informaci%C3%B3n%20para%20conseguir%20m%C3%A1s%20clientes"
-
-               class="btn btn-primary"
-
-               data-i18n="hero.cta1"
-
-               target="_blank"
-
-               rel="noopener">
-
-              Hablar por WhatsApp
-
-            </a>
-
-
-
-            <a href="./brochure.pdf"
-
-               class="btn btn-secondary"
-
-               data-i18n="hero.cta2"
-
-               target="_blank"
-
-               rel="noopener">
-
-              Ver PDF
-
-            </a>
-
-          </div>
-
-
-
-          <div class="metrics">
-
-            <div class="metric delay-1">
-
-              <strong data-i18n="hero.metric1title">24/7</strong>
-
-              <span data-i18n="hero.metric1">Siempre activo</span>
-
-            </div>
-
-
-
-            <div class="metric delay-2">
-
-              <strong data-i18n="hero.metric2title">+Clientes</strong>
-
-              <span data-i18n="hero.metric2">Más oportunidades</span>
-
-            </div>
-
-
-
-            <div class="metric delay-3">
-
-              <strong data-i18n="hero.metric3title">Automático</strong>
-
-              <span data-i18n="hero.metric3">Sin esfuerzo</span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="hero-side reveal-right" id="heroParallax">
-
-          <div class="orb one"></div>
-
-          <div class="orb two"></div>
-
-
-
-          <div class="hero-badge-box">
-
-            <h3 data-i18n="hero.cardTitle">Diseño visual que inspira confianza</h3>
-
-            <p data-i18n="hero.cardDesc">Creamos una presencia digital moderna y elegante para que tu negocio se vea premium desde el primer segundo.</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <div class="container ticker-wrap reveal">
-
-      <div class="ticker">
-
-        <span data-i18n="ticker.1">Barberías</span>
-
-        <span data-i18n="ticker.2">Restaurantes</span>
-
-        <span data-i18n="ticker.3">Daycares</span>
-
-        <span data-i18n="ticker.4">HVAC</span>
-
-        <span data-i18n="ticker.5">Landscaping</span>
-
-        <span data-i18n="ticker.6">Puertas y ventanas</span>
-
-        <span data-i18n="ticker.7">Negocios locales</span>
-
-
-
-        <span data-i18n="ticker.1">Barberías</span>
-
-        <span data-i18n="ticker.2">Restaurantes</span>
-
-        <span data-i18n="ticker.3">Daycares</span>
-
-        <span data-i18n="ticker.4">HVAC</span>
-
-        <span data-i18n="ticker.5">Landscaping</span>
-
-        <span data-i18n="ticker.6">Puertas y ventanas</span>
-
-        <span data-i18n="ticker.7">Negocios locales</span>
-
-      </div>
-
+    <div class="nc">
+      <div class="lpill"><button id="bes" class="on">ES</button><button id="ben">EN</button></div>
+      <button class="ibtn" id="thm">☾</button>
     </div>
-
-
-
-    <section id="services" class="container">
-
-      <div class="section-head reveal">
-
-        <h2 data-i18n="services.title">Servicios</h2>
-
-        <p data-i18n="services.desc">Todo lo que necesitas para que tu negocio se vea profesional y atraiga clientes.</p>
-
-      </div>
-
-
-
-      <div class="bento">
-
-        <div class="card reveal delay-1">
-
-          <div class="icon">🌐</div>
-
-          <h3 data-i18n="services.s1t">Landing Page</h3>
-
-          <img src="./service1.jpg" alt="Diseño de landing page profesional para negocio local" class="service-image">
-
-          <p data-i18n="services.s1d">Diseño moderno optimizado para convertir visitas en clientes.</p>
-
-        </div>
-
-
-
-        <div class="card reveal delay-2">
-
-          <div class="icon">🎨</div>
-
-          <h3 data-i18n="services.s2t">Diseño & Logo</h3>
-
-          <img src="./service2.jpg" alt="Diseño de branding y logo para negocio local" class="service-image">
-
-          <p data-i18n="services.s2d">Imagen visual profesional que transmite confianza.</p>
-
-        </div>
-
-
-
-        <div class="card reveal delay-3">
-
-          <div class="icon">📱</div>
-
-          <h3 data-i18n="services.s3t">Redes Sociales</h3>
-
-          <img src="./service3.jpg" alt="Gestión visual de redes sociales para negocio local" class="service-image">
-
-          <p data-i18n="services.s3d">Contenido atractivo para posicionar tu marca.</p>
-
-        </div>
-
-
-
-        <div class="card reveal delay-4">
-
-          <div class="icon">💳</div>
-
-          <h3 data-i18n="services.s4t">Tarjeta Digital</h3>
-
-          <img src="./service4.jpg" alt="Tarjeta digital profesional para compartir negocio" class="service-image">
-
-          <p data-i18n="services.s4d">Comparte tu negocio con un solo clic.</p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <section class="container">
-
-      <div class="section-head reveal">
-
-        <h2 data-i18n="why.title">Por qué esto importa</h2>
-
-        <p data-i18n="why.desc">Tu presencia digital no solo debe verse bien. Debe ayudarte a convencer, vender y destacar.</p>
-
-      </div>
-
-
-
-      <div class="split">
-
-        <div class="panel reveal-left">
-
-          <div class="quotes">
-
-            <div class="quote">
-
-              <p data-i18n="why.q1d">Más clientes potenciales porque el camino hacia el contacto es más claro.</p>
-
-              <small data-i18n="why.q1t">Conversión</small>
-
-            </div>
-
-
-
-            <div class="quote">
-
-              <p data-i18n="why.q2d">Más credibilidad porque la marca se siente estructurada, no improvisada.</p>
-
-              <small data-i18n="why.q2t">Percepción</small>
-
-            </div>
-
-
-
-            <div class="quote">
-
-              <p data-i18n="why.q3d">Más valor percibido, lo que ayuda a justificar mejores precios.</p>
-
-              <small data-i18n="why.q3t">Posicionamiento</small>
-
-            </div>
-
-
-
-            <div class="quote">
-
-              <p data-i18n="why.q4d">Presencia visible 24/7 incluso cuando no estás respondiendo.</p>
-
-              <small data-i18n="why.q4t">Disponibilidad</small>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="panel reveal-right proof-box">
-
-          <h3 data-i18n="proof.title">Una presencia premium cambia la impresión del cliente</h3>
-
-          <p class="muted" data-i18n="proof.desc">Un negocio que se ve profesional transmite confianza desde el primer segundo y facilita que te contacten.</p>
-
-
-
-          <div class="proof-list">
-
-            <div class="proof-item">
-
-              <strong data-i18n="proof.i1t">Más confianza</strong>
-
-              <span data-i18n="proof.i1d">Tu negocio luce más serio y mejor preparado.</span>
-
-            </div>
-
-
-
-            <div class="proof-item">
-
-              <strong data-i18n="proof.i2t">Más contactos</strong>
-
-              <span data-i18n="proof.i2d">El cliente entiende más rápido qué haces y cómo escribirte.</span>
-
-            </div>
-
-
-
-            <div class="proof-item">
-
-              <strong data-i18n="proof.i3t">Más valor percibido</strong>
-
-              <span data-i18n="proof.i3d">Una mejor imagen ayuda a justificar mejores precios.</span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <section id="testimonials" class="container">
-
-      <div class="section-head reveal">
-
-        <h2 data-i18n="testimonials.title">Lo que dicen nuestros clientes</h2>
-
-        <p data-i18n="testimonials.desc">Resultados reales de negocios reales.</p>
-
-      </div>
-
-
-
-      <div class="testimonials-grid">
-
-        <div class="testimonial-card reveal delay-1">
-
-          <div class="stars">★★★★★</div>
-
-          <p data-i18n="testimonials.q1">Antes mi negocio se veía muy básico. Ahora tengo una imagen más profesional y recibo más mensajes cada semana.</p>
-
-          <span data-i18n="testimonials.a1">— Dueño de negocio local</span>
-
-        </div>
-
-
-
-        <div class="testimonial-card reveal delay-2">
-
-          <div class="stars">★★★★★</div>
-
-          <p data-i18n="testimonials.q2">La diferencia es enorme. Ahora mis clientes confían más en mi negocio y me contactan con más seguridad.</p>
-
-          <span data-i18n="testimonials.a2">— Pequeño empresario</span>
-
-        </div>
-
-
-
-        <div class="testimonial-card reveal delay-3">
-
-          <div class="stars">★★★★★</div>
-
-          <p data-i18n="testimonials.q3">Mi página ahora se ve moderna y profesional. Fue la mejor decisión para hacer crecer mi negocio.</p>
-
-          <span data-i18n="testimonials.a3">— Emprendedor</span>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <section id="plans" class="container">
-
-      <div class="section-head reveal">
-
-        <h2 data-i18n="plans.title">Planes</h2>
-
-        <p data-i18n="plans.desc">Elige el nivel que mejor se adapte a tu negocio.</p>
-
-      </div>
-
-
-
-      <div class="plans-grid">
-
-        <div class="plan reveal delay-1">
-
-          <h3 data-i18n="plans.basicTitle">Basic</h3>
-
-          <div class="price">$199</div>
-
-          <ul>
-
-            <li data-i18n="plans.p1a">Landing de 1 sección profesional</li>
-
-            <li data-i18n="plans.p1b">Botón directo a WhatsApp</li>
-
-            <li data-i18n="plans.p1c">Diseño limpio y adaptable a móvil</li>
-
-            <li data-i18n="plans.p1d">Entrega lista para publicar</li>
-
-          </ul>
-
-          <a href="https://wa.me/17863548796?text=Hola%20quiero%20informaci%C3%B3n%20del%20plan%20Basic"
-
-             class="btn btn-secondary"
-
-             target="_blank"
-
-             rel="noopener"
-
-             data-i18n="plans.cta1">Consultar Basic</a>
-
-        </div>
-
-
-
-        <div class="plan highlight reveal delay-2">
-
-          <div class="badge" data-i18n="plans.badge">Más vendido</div>
-
-          <h3 data-i18n="plans.proTitle">Professional</h3>
-
-          <div class="price">$399</div>
-
-          <ul>
-
-            <li data-i18n="plans.p2a">Landing premium de varias secciones</li>
-
-            <li data-i18n="plans.p2b">Diseño visual más impactante</li>
-
-            <li data-i18n="plans.p2c">Bilingüe (español / inglés)</li>
-
-            <li data-i18n="plans.p2d">Botones, PDF y estructura comercial</li>
-
-            <li data-i18n="plans.p2e">Lista para Netlify y dominio</li>
-
-          </ul>
-
-          <a href="https://wa.me/17863548796?text=Hola%20quiero%20informaci%C3%B3n%20del%20plan%20Professional"
-
-             class="btn btn-primary"
-
-             target="_blank"
-
-             rel="noopener"
-
-             data-i18n="plans.cta2">Consultar Professional</a>
-
-        </div>
-
-
-
-        <div class="plan reveal delay-3">
-
-          <h3 data-i18n="plans.premiumTitle">Premium</h3>
-
-          <div class="price">$699+</div>
-
-          <ul>
-
-            <li data-i18n="plans.p3a">Landing avanzada y branding visual</li>
-
-            <li data-i18n="plans.p3b">Imagen más completa del negocio</li>
-
-            <li data-i18n="plans.p3c">Secciones personalizadas</li>
-
-            <li data-i18n="plans.p3d">Mayor enfoque en posicionamiento</li>
-
-            <li data-i18n="plans.p3e">Ideal para negocios que quieren escalar</li>
-
-          </ul>
-
-          <a href="https://wa.me/17863548796?text=Hola%20quiero%20informaci%C3%B3n%20del%20plan%20Premium"
-
-             class="btn btn-secondary"
-
-             target="_blank"
-
-             rel="noopener"
-
-             data-i18n="plans.cta3">Consultar Premium</a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <section id="process" class="container">
-
-      <div class="section-head reveal">
-
-        <h2 data-i18n="process.title">Proceso</h2>
-
-        <p data-i18n="process.desc">Un camino simple para pasar de idea a presencia digital profesional.</p>
-
-      </div>
-
-
-
-      <div class="steps">
-
-        <div class="step reveal delay-1">
-
-          <div class="num">1</div>
-
-          <h3 data-i18n="process.s1t">Nos escribes</h3>
-
-          <p data-i18n="process.s1d">Nos cuentas qué hace tu negocio y qué quieres lograr.</p>
-
-        </div>
-
-
-
-        <div class="step reveal delay-2">
-
-          <div class="num">2</div>
-
-          <h3 data-i18n="process.s2t">Diseñamos</h3>
-
-          <p data-i18n="process.s2d">Creamos estructura, visual y mensaje de venta.</p>
-
-        </div>
-
-
-
-        <div class="step reveal delay-3">
-
-          <div class="num">3</div>
-
-          <h3 data-i18n="process.s3t">Publicamos</h3>
-
-          <p data-i18n="process.s3d">La dejamos lista para Netlify y para tu dominio cuando quieras.</p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <section id="brief" class="container">
-
-      <div class="section-head reveal">
-
-        <h2 data-i18n="brief.title">Brief del cliente</h2>
-
-        <p data-i18n="brief.desc">La información correcta nos permite construir una landing realmente profesional.</p>
-
-      </div>
-
-
-
-      <div class="brief-grid">
-
-        <div class="brief-card reveal delay-1">
-
-          <h4 data-i18n="brief.c1t">Información básica</h4>
-
-          <ul>
-
-            <li data-i18n="brief.c1a">Nombre del negocio</li>
-
-            <li data-i18n="brief.c1b">Tipo de negocio</li>
-
-            <li data-i18n="brief.c1c">Ciudad, teléfono y WhatsApp</li>
-
-            <li data-i18n="brief.c1d">Horario y correo</li>
-
-          </ul>
-
-        </div>
-
-
-
-        <div class="brief-card reveal delay-2">
-
-          <h4 data-i18n="brief.c2t">Objetivo</h4>
-
-          <ul>
-
-            <li data-i18n="brief.c2a">Llamadas, ventas o reservas</li>
-
-            <li data-i18n="brief.c2b">Meta principal</li>
-
-            <li data-i18n="brief.c2c">Prioridad comercial</li>
-
-          </ul>
-
-        </div>
-
-
-
-        <div class="brief-card reveal delay-3">
-
-          <h4 data-i18n="brief.c3t">Cliente ideal</h4>
-
-          <ul>
-
-            <li data-i18n="brief.c3a">Edad y tipo de cliente</li>
-
-            <li data-i18n="brief.c3b">Problema que resuelves</li>
-
-            <li data-i18n="brief.c3c">Qué buscan de ti</li>
-
-          </ul>
-
-        </div>
-
-
-
-        <div class="brief-card reveal delay-4">
-
-          <h4 data-i18n="brief.c4t">Visuales y extras</h4>
-
-          <ul>
-
-            <li data-i18n="brief.c4a">Fotos, logo y colores</li>
-
-            <li data-i18n="brief.c4b">Redes y enlaces</li>
-
-            <li data-i18n="brief.c4c">Mantenimiento, SEO o publicidad</li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <section class="cta reveal" id="ctaParallax">
-
-      <h2 data-i18n="cta.title">Transforma tu negocio hoy</h2>
-
-      <p data-i18n="cta.desc">No necesitas más seguidores… necesitas una imagen profesional que convierta visitas en clientes.</p>
-
-
-
-      <div class="cta-buttons">
-
-        <a href="https://wa.me/17863548796?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20una%20landing%20page"
-
-           class="btn btn-primary"
-
-           data-i18n="cta.btn1"
-
-           target="_blank"
-
-           rel="noopener">
-
-          Solicitar ahora
-
-        </a>
-
-
-
-        <a href="./brochure.pdf"
-
-           class="btn btn-secondary"
-
-           data-i18n="cta.btn2"
-
-           target="_blank"
-
-           rel="noopener">
-
-          Ver presentación
-
-        </a>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-
-  <footer class="footer visible">
-
-    <div class="footer-logo-wrap">
-
-      <img src="./logo.jpeg" alt="Tu Espacio Creativo" class="footer-logo">
-
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hl">
+    <div class="eyebrow" data-k="hero.eyebrow">Agencia creativa premium</div>
+    <h1 class="htitle" data-kh="hero.title">Haz que tu negocio se vea <em>serio</em>, moderno y listo para vender</h1>
+    <p class="hdesc" data-k="hero.desc">Creamos landing pages, logos, redes sociales, tarjetas digitales y presencia visual para negocios locales que quieren verse mejor y conseguir más clientes.</p>
+    <div class="hbtns">
+      <a href="https://wa.me/17863548796?text=Hola%20quiero%20informaci%C3%B3n%20para%20conseguir%20m%C3%A1s%20clientes" class="btn-p" target="_blank" rel="noopener" data-k="hero.cta1">Hablar por WhatsApp →</a>
+      <a href="./brochure.pdf" class="btn-o" target="_blank" rel="noopener" data-k="hero.cta2">Ver PDF</a>
     </div>
-
-    <p>© 2026 Tu Espacio Creativo</p>
-
-  </footer>
-
-
-
-  <script>
-
-    const loader = document.getElementById('pageLoader');
-
-    const navbar = document.getElementById('navbar');
-
-    const themeToggle = document.getElementById("theme-toggle");
-
-
-
-    const translations = {
-
-      es: {
-
-        "nav.services":"Servicios",
-
-        "nav.pricing":"Planes",
-
-        "nav.process":"Proceso",
-
-        "nav.brief":"Brief",
-
-
-
-        "theme.light":"Modo claro",
-
-        "theme.dark":"Modo oscuro",
-
-
-
-        "hero.eyebrow":"Agencia creativa premium",
-
-        "hero.title":"Haz que tu negocio se vea serio, moderno y listo para vender",
-
-        "hero.desc":"Creamos landing pages, logos, redes sociales, tarjetas digitales y presencia visual para negocios locales que quieren verse mejor y conseguir más clientes.",
-
-        "hero.cta1":"Hablar por WhatsApp",
-
-        "hero.cta2":"Ver PDF",
-
-        "hero.metric1title":"24/7",
-
-        "hero.metric2title":"+Clientes",
-
-        "hero.metric3title":"Automático",
-
-        "hero.metric1":"Siempre activo",
-
-        "hero.metric2":"Más oportunidades",
-
-        "hero.metric3":"Sin esfuerzo",
-
-        "hero.cardTitle":"Diseño visual que inspira confianza",
-
-        "hero.cardDesc":"Creamos una presencia digital moderna y elegante para que tu negocio se vea premium desde el primer segundo.",
-
-
-
-        "ticker.1":"Barberías",
-
-        "ticker.2":"Restaurantes",
-
-        "ticker.3":"Daycares",
-
-        "ticker.4":"HVAC",
-
-        "ticker.5":"Landscaping",
-
-        "ticker.6":"Puertas y ventanas",
-
-        "ticker.7":"Negocios locales",
-
-
-
-        "services.title":"Servicios",
-
-        "services.desc":"Todo lo que necesitas para que tu negocio se vea profesional y atraiga clientes.",
-
-        "services.s1t":"Landing Page",
-
-        "services.s1d":"Diseño moderno optimizado para convertir visitas en clientes.",
-
-        "services.s2t":"Diseño & Logo",
-
-        "services.s2d":"Imagen visual profesional que transmite confianza.",
-
-        "services.s3t":"Redes Sociales",
-
-        "services.s3d":"Contenido atractivo para posicionar tu marca.",
-
-        "services.s4t":"Tarjeta Digital",
-
-        "services.s4d":"Comparte tu negocio con un solo clic.",
-
-
-
-        "why.title":"Por qué esto importa",
-
-        "why.desc":"Tu presencia digital no solo debe verse bien. Debe ayudarte a convencer, vender y destacar.",
-
-        "why.q1t":"Conversión",
-
-        "why.q1d":"Más clientes potenciales porque el camino hacia el contacto es más claro.",
-
-        "why.q2t":"Percepción",
-
-        "why.q2d":"Más credibilidad porque la marca se siente estructurada, no improvisada.",
-
-        "why.q3t":"Posicionamiento",
-
-        "why.q3d":"Más valor percibido, lo que ayuda a justificar mejores precios.",
-
-        "why.q4t":"Disponibilidad",
-
-        "why.q4d":"Presencia visible 24/7 incluso cuando no estás respondiendo.",
-
-
-
-        "proof.title":"Una presencia premium cambia la impresión del cliente",
-
-        "proof.desc":"Un negocio que se ve profesional transmite confianza desde el primer segundo y facilita que te contacten.",
-
-        "proof.i1t":"Más confianza",
-
-        "proof.i1d":"Tu negocio luce más serio y mejor preparado.",
-
-        "proof.i2t":"Más contactos",
-
-        "proof.i2d":"El cliente entiende más rápido qué haces y cómo escribirte.",
-
-        "proof.i3t":"Más valor percibido",
-
-        "proof.i3d":"Una mejor imagen ayuda a justificar mejores precios.",
-
-
-
-        "testimonials.title":"Lo que dicen nuestros clientes",
-
-        "testimonials.desc":"Resultados reales de negocios reales.",
-
-        "testimonials.q1":"Antes mi negocio se veía muy básico. Ahora tengo una imagen más profesional y recibo más mensajes cada semana.",
-
-        "testimonials.a1":"— Dueño de negocio local",
-
-        "testimonials.q2":"La diferencia es enorme. Ahora mis clientes confían más en mi negocio y me contactan con más seguridad.",
-
-        "testimonials.a2":"— Pequeño empresario",
-
-        "testimonials.q3":"Mi página ahora se ve moderna y profesional. Fue la mejor decisión para hacer crecer mi negocio.",
-
-        "testimonials.a3":"— Emprendedor",
-
-
-
-        "plans.title":"Planes",
-
-        "plans.desc":"Elige el nivel que mejor se adapte a tu negocio.",
-
-        "plans.badge":"Más vendido",
-
-        "plans.basicTitle":"Basic",
-
-        "plans.proTitle":"Professional",
-
-        "plans.premiumTitle":"Premium",
-
-        "plans.p1a":"Landing de 1 sección profesional",
-
-        "plans.p1b":"Botón directo a WhatsApp",
-
-        "plans.p1c":"Diseño limpio y adaptable a móvil",
-
-        "plans.p1d":"Entrega lista para publicar",
-
-        "plans.p2a":"Landing premium de varias secciones",
-
-        "plans.p2b":"Diseño visual más impactante",
-
-        "plans.p2c":"Bilingüe (español / inglés)",
-
-        "plans.p2d":"Botones, PDF y estructura comercial",
-
-        "plans.p2e":"Lista para Netlify y dominio",
-
-        "plans.p3a":"Landing avanzada y branding visual",
-
-        "plans.p3b":"Imagen más completa del negocio",
-
-        "plans.p3c":"Secciones personalizadas",
-
-        "plans.p3d":"Mayor enfoque en posicionamiento",
-
-        "plans.p3e":"Ideal para negocios que quieren escalar",
-
-        "plans.cta1":"Consultar Basic",
-
-        "plans.cta2":"Consultar Professional",
-
-        "plans.cta3":"Consultar Premium",
-
-
-
-        "process.title":"Proceso",
-
-        "process.desc":"Un camino simple para pasar de idea a presencia digital profesional.",
-
-        "process.s1t":"Nos escribes",
-
-        "process.s1d":"Nos cuentas qué hace tu negocio y qué quieres lograr.",
-
-        "process.s2t":"Diseñamos",
-
-        "process.s2d":"Creamos estructura, visual y mensaje de venta.",
-
-        "process.s3t":"Publicamos",
-
-        "process.s3d":"La dejamos lista para Netlify y para tu dominio cuando quieras.",
-
-
-
-        "brief.title":"Brief del cliente",
-
-        "brief.desc":"La información correcta nos permite construir una landing realmente profesional.",
-
-        "brief.c1t":"Información básica",
-
-        "brief.c1a":"Nombre del negocio",
-
-        "brief.c1b":"Tipo de negocio",
-
-        "brief.c1c":"Ciudad, teléfono y WhatsApp",
-
-        "brief.c1d":"Horario y correo",
-
-        "brief.c2t":"Objetivo",
-
-        "brief.c2a":"Llamadas, ventas o reservas",
-
-        "brief.c2b":"Meta principal",
-
-        "brief.c2c":"Prioridad comercial",
-
-        "brief.c3t":"Cliente ideal",
-
-        "brief.c3a":"Edad y tipo de cliente",
-
-        "brief.c3b":"Problema que resuelves",
-
-        "brief.c3c":"Qué buscan de ti",
-
-        "brief.c4t":"Visuales y extras",
-
-        "brief.c4a":"Fotos, logo y colores",
-
-        "brief.c4b":"Redes y enlaces",
-
-        "brief.c4c":"Mantenimiento, SEO o publicidad",
-
-
-
-        "cta.title":"Transforma tu negocio hoy",
-
-        "cta.desc":"No necesitas más seguidores… necesitas una imagen profesional que convierta visitas en clientes.",
-
-        "cta.btn1":"Solicitar ahora",
-
-        "cta.btn2":"Ver presentación"
-
-      },
-
-      en: {
-
-        "nav.services":"Services",
-
-        "nav.pricing":"Pricing",
-
-        "nav.process":"Process",
-
-        "nav.brief":"Brief",
-
-
-
-        "theme.light":"Light mode",
-
-        "theme.dark":"Dark mode",
-
-
-
-        "hero.eyebrow":"Premium creative agency",
-
-        "hero.title":"Make your business look serious, modern and ready to sell",
-
-        "hero.desc":"We create landing pages, logos, social media, digital business cards and visual presence for local businesses that want to look better and get more clients.",
-
-        "hero.cta1":"Chat on WhatsApp",
-
-        "hero.cta2":"View PDF",
-
-        "hero.metric1title":"24/7",
-
-        "hero.metric2title":"+Clients",
-
-        "hero.metric3title":"Automatic",
-
-        "hero.metric1":"Always active",
-
-        "hero.metric2":"More opportunities",
-
-        "hero.metric3":"Effortless",
-
-        "hero.cardTitle":"Visual design that builds trust",
-
-        "hero.cardDesc":"We create a modern and elegant digital presence so your business looks premium from the very first second.",
-
-
-
-        "ticker.1":"Barbershops",
-
-        "ticker.2":"Restaurants",
-
-        "ticker.3":"Daycares",
-
-        "ticker.4":"HVAC",
-
-        "ticker.5":"Landscaping",
-
-        "ticker.6":"Doors and Windows",
-
-        "ticker.7":"Local Businesses",
-
-
-
-        "services.title":"Services",
-
-        "services.desc":"Everything you need to make your business look professional and attract clients.",
-
-        "services.s1t":"Landing Page",
-
-        "services.s1d":"Modern design optimized to convert visits into clients.",
-
-        "services.s2t":"Design & Logo",
-
-        "services.s2d":"Professional visual identity that builds trust.",
-
-        "services.s3t":"Social Media",
-
-        "services.s3d":"Attractive content to position your brand.",
-
-        "services.s4t":"Digital Business Card",
-
-        "services.s4d":"Share your business in one click.",
-
-
-
-        "why.title":"Why this matters",
-
-        "why.desc":"Your digital presence should not only look good. It should help you convince, sell and stand out.",
-
-        "why.q1t":"Conversion",
-
-        "why.q1d":"More potential clients because the path to contact is clearer.",
-
-        "why.q2t":"Perception",
-
-        "why.q2d":"More credibility because the brand feels structured, not improvised.",
-
-        "why.q3t":"Positioning",
-
-        "why.q3d":"More perceived value, which helps justify better pricing.",
-
-        "why.q4t":"Availability",
-
-        "why.q4d":"24/7 visibility even when you are not replying.",
-
-
-
-        "proof.title":"A premium presence changes the client’s first impression",
-
-        "proof.desc":"A business that looks professional builds trust immediately and makes it easier for people to contact you.",
-
-        "proof.i1t":"More trust",
-
-        "proof.i1d":"Your business looks more serious and better prepared.",
-
-        "proof.i2t":"More contacts",
-
-        "proof.i2d":"Customers understand faster what you do and how to contact you.",
-
-        "proof.i3t":"More perceived value",
-
-        "proof.i3d":"A better image helps justify better pricing.",
-
-
-
-        "testimonials.title":"What our clients say",
-
-        "testimonials.desc":"Real results from real businesses.",
-
-        "testimonials.q1":"Before, my business looked very basic. Now I have a more professional image and receive more messages every week.",
-
-        "testimonials.a1":"— Local business owner",
-
-        "testimonials.q2":"The difference is huge. Now my customers trust my business more and contact me with greater confidence.",
-
-        "testimonials.a2":"— Small business owner",
-
-        "testimonials.q3":"My website now looks modern and professional. It was the best decision to grow my business.",
-
-        "testimonials.a3":"— Entrepreneur",
-
-
-
-        "plans.title":"Plans",
-
-        "plans.desc":"Choose the level that best fits your business.",
-
-        "plans.badge":"Best seller",
-
-        "plans.basicTitle":"Basic",
-
-        "plans.proTitle":"Professional",
-
-        "plans.premiumTitle":"Premium",
-
-        "plans.p1a":"Professional 1-section landing page",
-
-        "plans.p1b":"Direct WhatsApp button",
-
-        "plans.p1c":"Clean mobile-friendly design",
-
-        "plans.p1d":"Ready-to-publish delivery",
-
-        "plans.p2a":"Premium multi-section landing page",
-
-        "plans.p2b":"More impactful visual design",
-
-        "plans.p2c":"Bilingual (Spanish / English)",
-
-        "plans.p2d":"Buttons, PDF and sales structure",
-
-        "plans.p2e":"Ready for Netlify and domain",
-
-        "plans.p3a":"Advanced landing page and visual branding",
-
-        "plans.p3b":"Stronger business image",
-
-        "plans.p3c":"Custom sections",
-
-        "plans.p3d":"Greater focus on positioning",
-
-        "plans.p3e":"Ideal for businesses ready to scale",
-
-        "plans.cta1":"Ask about Basic",
-
-        "plans.cta2":"Ask about Professional",
-
-        "plans.cta3":"Ask about Premium",
-
-
-
-        "process.title":"Process",
-
-        "process.desc":"A simple path from idea to professional digital presence.",
-
-        "process.s1t":"You message us",
-
-        "process.s1d":"You tell us what your business does and what you want to achieve.",
-
-        "process.s2t":"We design",
-
-        "process.s2d":"We create structure, visual identity and sales message.",
-
-        "process.s3t":"We publish",
-
-        "process.s3d":"We leave it ready for Netlify and your domain whenever you want.",
-
-
-
-        "brief.title":"Client brief",
-
-        "brief.desc":"The right information helps us build a truly professional landing page.",
-
-        "brief.c1t":"Basic information",
-
-        "brief.c1a":"Business name",
-
-        "brief.c1b":"Business type",
-
-        "brief.c1c":"City, phone and WhatsApp",
-
-        "brief.c1d":"Hours and email",
-
-        "brief.c2t":"Goal",
-
-        "brief.c2a":"Calls, sales or bookings",
-
-        "brief.c2b":"Main goal",
-
-        "brief.c2c":"Commercial priority",
-
-        "brief.c3t":"Ideal client",
-
-        "brief.c3a":"Age and customer type",
-
-        "brief.c3b":"Problem you solve",
-
-        "brief.c3c":"What they want from you",
-
-        "brief.c4t":"Visuals and extras",
-
-        "brief.c4a":"Photos, logo and colors",
-
-        "brief.c4b":"Social links",
-
-        "brief.c4c":"Maintenance, SEO or ads",
-
-
-
-        "cta.title":"Transform your business today",
-
-        "cta.desc":"You don’t need more followers… you need a professional image that turns visitors into customers.",
-
-        "cta.btn1":"Get started",
-
-        "cta.btn2":"View brochure"
-
-      }
-
-    };
-
-
-
-    function handleNavbar(){
-
-      if(window.scrollY > 20){
-
-        navbar.classList.add('scrolled');
-
-      }else{
-
-        navbar.classList.remove('scrolled');
-
-      }
-
-    }
-
-
-
-    function updateThemeButton(lang){
-
-      const isLight = document.body.classList.contains("light-mode");
-
-      if(lang === "en"){
-
-        themeToggle.textContent = isLight ? translations.en["theme.dark"] : translations.en["theme.light"];
-
-      } else {
-
-        themeToggle.textContent = isLight ? translations.es["theme.dark"] : translations.es["theme.light"];
-
-      }
-
-    }
-
-
-
-    function applySavedTheme(){
-
-      const savedTheme = localStorage.getItem("site-theme");
-
-      if(savedTheme === "dark"){
-
-        document.body.classList.remove("light-mode");
-
-      } else {
-
-        document.body.classList.add("light-mode");
-
-      }
-
-    }
-
-
-
-    function setLang(lang){
-
-      document.documentElement.lang = lang;
-
-
-
-      document.querySelectorAll('[data-i18n]').forEach(el=>{
-
-        const key = el.getAttribute('data-i18n');
-
-        if(translations[lang] && translations[lang][key]){
-
-          el.innerText = translations[lang][key];
-
-        }
-
-      });
-
-
-
-      document.getElementById('btn-es').classList.toggle('active', lang === 'es');
-
-      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-
-
-
-      localStorage.setItem("site-lang", lang);
-
-      updateThemeButton(lang);
-
-    }
-
-
-
-    const revealItems = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-
-    function revealOnScroll(){
-
-      revealItems.forEach(el=>{
-
-        const top = el.getBoundingClientRect().top;
-
-        if(top < window.innerHeight - 70){
-
-          el.classList.add('visible');
-
-        }
-
-      });
-
-    }
-
-
-
-    function applyParallax(){
-
-      if(window.innerWidth <= 768) return;
-
-
-
-      const scrollY = window.scrollY;
-
-      const hero = document.getElementById('heroParallax');
-
-      const cta = document.getElementById('ctaParallax');
-
-
-
-      if(hero){
-
-        const heroOffset = Math.min(scrollY * 0.06, 40);
-
-        hero.style.backgroundPosition = `center calc(50% + ${heroOffset}px)`;
-
-      }
-
-
-
-      if(cta){
-
-        const ctaOffsetTop = cta.offsetTop;
-
-        const diff = Math.max(scrollY - ctaOffsetTop, 0);
-
-        const ctaOffset = Math.min(diff * 0.04, 30);
-
-        cta.style.backgroundPosition = `center calc(50% + ${ctaOffset}px)`;
-
-      }
-
-    }
-
-
-
-    themeToggle.addEventListener("click", () => {
-
-      document.body.classList.toggle("light-mode");
-
-      const currentLang = document.documentElement.lang === "en" ? "en" : "es";
-
-      const isLight = document.body.classList.contains("light-mode");
-
-      localStorage.setItem("site-theme", isLight ? "light" : "dark");
-
-      updateThemeButton(currentLang);
-
+    <div class="hmets">
+      <div class="hmet"><strong>24/7</strong><span data-k="hero.m1">Siempre activo</span></div>
+      <div class="hmet"><strong data-k="hero.m2n">+Clientes</strong><span data-k="hero.m2">Más oportunidades</span></div>
+      <div class="hmet"><strong>100%</strong><span data-k="hero.m3">Personalizado</span></div>
+    </div>
+  </div>
+  <div class="hr">
+    <div class="himg" id="hpar"></div>
+    <div class="hcard">
+      <h3 data-k="hero.ct">Diseño visual que inspira confianza</h3>
+      <p data-k="hero.cd">Creamos una presencia digital moderna y elegante para que tu negocio se vea premium desde el primer segundo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item" data-k="t1">Barberías</span><span class="ticker-item" data-k="t2">Restaurantes</span><span class="ticker-item" data-k="t3">Daycares</span><span class="ticker-item" data-k="t4">HVAC</span><span class="ticker-item" data-k="t5">Landscaping</span><span class="ticker-item" data-k="t6">Puertas y ventanas</span><span class="ticker-item" data-k="t7">Negocios locales</span>
+    <span class="ticker-item" data-k="t1">Barberías</span><span class="ticker-item" data-k="t2">Restaurantes</span><span class="ticker-item" data-k="t3">Daycares</span><span class="ticker-item" data-k="t4">HVAC</span><span class="ticker-item" data-k="t5">Landscaping</span><span class="ticker-item" data-k="t6">Puertas y ventanas</span><span class="ticker-item" data-k="t7">Negocios locales</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="secn">01</div>
+  <div class="w">
+    <div class="srv-hd">
+      <div class="rv"><div class="lbl" data-k="nav.services">Servicios</div><h2 class="sh2" data-kh="services.title">Todo lo que tu negocio necesita para <em>destacar</em></h2></div>
+      <p class="rv d1" data-k="services.desc">Todo lo que necesitas para que tu negocio se vea profesional y atraiga clientes.</p>
+    </div>
+    <div class="sg">
+      <div class="sc2 rv d1"><div class="sc2-img"><img src="./service1.jpg" alt="Landing Page"></div><div class="sc2-body"><span class="sc2-ico">🌐</span><h3 data-k="s1t">Landing Page</h3><p data-k="s1d">Diseño moderno optimizado para convertir visitas en clientes.</p></div><span class="sc2-arr">↗</span></div>
+      <div class="sc2 rv d2"><div class="sc2-img"><img src="./service2.jpg" alt="Diseño y Logo"></div><div class="sc2-body"><span class="sc2-ico">🎨</span><h3 data-k="s2t">Diseño & Logo</h3><p data-k="s2d">Imagen visual profesional que transmite confianza.</p></div><span class="sc2-arr">↗</span></div>
+      <div class="sc2 rv d3"><div class="sc2-img"><img src="./service3.jpg" alt="Redes Sociales"></div><div class="sc2-body"><span class="sc2-ico">📱</span><h3 data-k="s3t">Redes Sociales</h3><p data-k="s3d">Contenido atractivo para posicionar tu marca.</p></div><span class="sc2-arr">↗</span></div>
+      <div class="sc2 rv d4"><div class="sc2-img"><img src="./service4.jpg" alt="Tarjeta Digital"></div><div class="sc2-body"><span class="sc2-ico">💳</span><h3 data-k="s4t">Tarjeta Digital</h3><p data-k="s4d">Comparte tu negocio con un solo clic.</p></div><span class="sc2-arr">↗</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="secn">02</div>
+  <div class="w">
+    <div class="wg">
+      <div class="wl rvl">
+        <div class="lbl" data-k="why.lbl">Por qué importa</div>
+        <h2 class="sh2" data-kh="why.title">Tu imagen <em>es</em> tu primer vendedor</h2>
+        <p class="desc" data-k="why.desc">Tu presencia digital no solo debe verse bien. Debe ayudarte a convencer, vender y destacar frente a la competencia.</p>
+        <div class="wqs">
+          <div class="wq"><p data-k="wq1d">Más clientes potenciales porque el camino hacia el contacto es más claro.</p><small data-k="wq1t">Conversión</small></div>
+          <div class="wq"><p data-k="wq2d">Más credibilidad porque la marca se siente estructurada, no improvisada.</p><small data-k="wq2t">Percepción</small></div>
+          <div class="wq"><p data-k="wq3d">Más valor percibido, lo que ayuda a justificar mejores precios.</p><small data-k="wq3t">Posicionamiento</small></div>
+          <div class="wq"><p data-k="wq4d">Presencia visible 24/7 incluso cuando no estás respondiendo.</p><small data-k="wq4t">Disponibilidad</small></div>
+        </div>
+      </div>
+      <div class="wr rvr">
+        <h3 data-k="proof.t">Una presencia premium cambia la impresión del cliente</h3>
+        <p class="desc" data-k="proof.d">Un negocio que se ve profesional transmite confianza desde el primer segundo.</p>
+        <div>
+          <div class="pi"><span class="pin">01</span><div><strong data-k="pi1t">Más confianza</strong><span data-k="pi1d">Tu negocio luce más serio y mejor preparado.</span></div></div>
+          <div class="pi"><span class="pin">02</span><div><strong data-k="pi2t">Más contactos</strong><span data-k="pi2d">El cliente entiende más rápido qué haces y cómo escribirte.</span></div></div>
+          <div class="pi"><span class="pin">03</span><div><strong data-k="pi3t">Más valor percibido</strong><span data-k="pi3d">Una mejor imagen ayuda a justificar mejores precios.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="secn">03</div>
+  <div class="w">
+    <div class="th2 rv">
+      <div><div class="lbl" data-k="test.lbl">Testimonios</div><h2 class="sh2" data-kh="test.title">Lo que dicen nuestros <em>clientes</em></h2></div>
+      <p data-k="test.sub">Resultados reales de negocios reales.</p>
+    </div>
+    <div class="tg">
+      <div class="tc rv d1"><div class="tq-ico">"</div><div class="stars">★★★★★</div><blockquote data-k="tq1">Antes mi negocio se veía muy básico. Ahora tengo una imagen más profesional y recibo más mensajes cada semana.</blockquote><cite data-k="ta1">— Dueño de negocio local</cite></div>
+      <div class="tc rv d2"><div class="tq-ico">"</div><div class="stars">★★★★★</div><blockquote data-k="tq2">La diferencia es enorme. Ahora mis clientes confían más en mi negocio y me contactan con más seguridad.</blockquote><cite data-k="ta2">— Pequeño empresario</cite></div>
+      <div class="tc rv d3"><div class="tq-ico">"</div><div class="stars">★★★★★</div><blockquote data-k="tq3">Mi página ahora se ve moderna y profesional. Fue la mejor decisión para hacer crecer mi negocio.</blockquote><cite data-k="ta3">— Emprendedor</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section id="plans">
+  <div class="secn">04</div>
+  <div class="w">
+    <div class="ph rv"><div class="lbl" style="justify-content:center" data-k="plans.lbl">Planes</div><h2 class="sh2" data-kh="plans.title">Elige el plan <em>ideal</em> para tu negocio</h2><p data-k="plans.sub">Elige el nivel que mejor se adapte a tu negocio.</p></div>
+    <div class="pg">
+      <div class="plan rv d1">
+        <div class="pname" data-k="p1n">Basic</div><div class="pprice">$199</div><div class="pdiv"></div>
+        <ul><li data-k="p1a">Landing de 1 sección profesional</li><li data-k="p1b">Botón directo a WhatsApp</li><li data-k="p1c">Diseño limpio y adaptable a móvil</li><li data-k="p1d">Entrega lista para publicar</li></ul>
+        <a href="https://wa.me/17863548796?text=Hola%20quiero%20informaci%C3%B3n%20del%20plan%20Basic" class="btn-o" target="_blank" rel="noopener" data-k="p1cta">Consultar Basic</a>
+      </div>
+      <div class="plan feat rv d2">
+        <div class="pbadge" data-k="plans.badge">Más vendido</div>
+        <div class="pname" data-k="p2n">Professional</div><div class="pprice">$399</div><div class="pdiv"></div>
+        <ul><li data-k="p2a">Landing premium de varias secciones</li><li data-k="p2b">Diseño visual más impactante</li><li data-k="p2c">Bilingüe (español / inglés)</li><li data-k="p2d">Botones, PDF y estructura comercial</li><li data-k="p2e">Lista para Netlify y dominio</li></ul>
+        <a href="https://wa.me/17863548796?text=Hola%20quiero%20informaci%C3%B3n%20del%20plan%20Professional" class="btn-p" target="_blank" rel="noopener" data-k="p2cta">Consultar Professional</a>
+      </div>
+      <div class="plan rv d3">
+        <div class="pname" data-k="p3n">Premium</div><div class="pprice">$699+</div><div class="pdiv"></div>
+        <ul><li data-k="p3a">Landing avanzada y branding visual</li><li data-k="p3b">Imagen más completa del negocio</li><li data-k="p3c">Secciones personalizadas</li><li data-k="p3d">Mayor enfoque en posicionamiento</li><li data-k="p3e">Ideal para negocios que quieren escalar</li></ul>
+        <a href="https://wa.me/17863548796?text=Hola%20quiero%20informaci%C3%B3n%20del%20plan%20Premium" class="btn-o" target="_blank" rel="noopener" data-k="p3cta">Consultar Premium</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="secn">05</div>
+  <div class="w">
+    <div class="proc-hd">
+      <div class="rv"><div class="lbl" data-k="nav.process">Proceso</div><h2 class="sh2" data-kh="proc.title">De idea a presencia <em>profesional</em> en 3 pasos</h2></div>
+      <p class="rv d1" data-k="proc.desc">Un camino simple para pasar de idea a presencia digital profesional.</p>
+    </div>
+    <div class="sr">
+      <div class="stc rv d1"><div class="stn">01</div><h3 data-k="st1t">Nos escribes</h3><p data-k="st1d">Nos cuentas qué hace tu negocio y qué quieres lograr.</p></div>
+      <div class="stc rv d2"><div class="stn">02</div><h3 data-k="st2t">Diseñamos</h3><p data-k="st2d">Creamos estructura, visual y mensaje de venta.</p></div>
+      <div class="stc rv d3"><div class="stn">03</div><h3 data-k="st3t">Publicamos</h3><p data-k="st3d">La dejamos lista para Netlify y para tu dominio cuando quieras.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BRIEF -->
+<section id="brief">
+  <div class="secn">06</div>
+  <div class="w">
+    <div class="bh rv"><div class="lbl" style="justify-content:center" data-k="nav.brief">Brief</div><h2 class="sh2" data-kh="brief.title">La información que nos permite crear algo <em>extraordinario</em></h2><p data-k="brief.desc">La información correcta nos permite construir una landing realmente profesional.</p></div>
+    <div class="bg2">
+      <div class="bc rv d1"><h4 data-k="bc1t">Información básica</h4><ul><li data-k="bc1a">Nombre del negocio</li><li data-k="bc1b">Tipo de negocio</li><li data-k="bc1c">Ciudad, teléfono y WhatsApp</li><li data-k="bc1d">Horario y correo</li></ul></div>
+      <div class="bc rv d2"><h4 data-k="bc2t">Objetivo</h4><ul><li data-k="bc2a">Llamadas, ventas o reservas</li><li data-k="bc2b">Meta principal</li><li data-k="bc2c">Prioridad comercial</li></ul></div>
+      <div class="bc rv d3"><h4 data-k="bc3t">Cliente ideal</h4><ul><li data-k="bc3a">Edad y tipo de cliente</li><li data-k="bc3b">Problema que resuelves</li><li data-k="bc3c">Qué buscan de ti</li></ul></div>
+      <div class="bc rv d4"><h4 data-k="bc4t">Visuales y extras</h4><ul><li data-k="bc4a">Fotos, logo y colores</li><li data-k="bc4b">Redes y enlaces</li><li data-k="bc4c">Mantenimiento, SEO o publicidad</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="cta-bg"></div>
+  <div class="cta-in w">
+    <div class="lbl rv" data-k="cta.lbl">Tu próximo paso</div>
+    <h2 class="rv d1" data-kh="cta.title">Transforma tu negocio <em>hoy</em></h2>
+    <p class="rv d2" data-k="cta.desc">No necesitas más seguidores… necesitas una imagen profesional que convierta visitas en clientes.</p>
+    <div class="cta-btns rv d3">
+      <a href="https://wa.me/17863548796?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20una%20landing%20page" class="btn-p" target="_blank" rel="noopener" data-k="cta.b1">Solicitar ahora →</a>
+      <a href="./brochure.pdf" class="btn-o" style="color:#F3EDE0;border-color:rgba(243,237,224,.25)" target="_blank" rel="noopener" data-k="cta.b2">Ver presentación</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="w fi">
+    <img src="./logo.jpeg" alt="Tu Espacio Creativo">
+    <span class="fg">Diseño que vende.</span>
+    <span class="fc">© 2026 Tu Espacio Creativo</span>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a id="wa-float" href="https://wa.me/17863548796?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20una%20landing%20page" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<div class="wa-tip" data-k="wa.tip">¡Escríbenos ahora!</div>
+
+<!-- AI BUTTON -->
+<button id="ai-btn" aria-label="Asistente virtual">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#ECC864" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="11" width="18" height="10" rx="2"/>
+    <path d="M8 11V7a4 4 0 018 0v4"/>
+    <circle cx="9" cy="16" r=".8" fill="#ECC864" stroke="none"/>
+    <circle cx="15" cy="16" r=".8" fill="#ECC864" stroke="none"/>
+    <path d="M12 3v2M8 3l1 1M16 3l-1 1"/>
+  </svg>
+</button>
+<div class="ai-tip" data-k="ai.tip">Asistente virtual</div>
+
+<!-- AI CHAT WINDOW -->
+<div id="ai-win" role="dialog">
+  <div class="ai-hd">
+    <div class="ai-av">🤖</div>
+    <div class="ai-hd-txt"><h4 data-k="ai.name">Asistente Creativo</h4><p data-k="ai.sub">Tu Espacio Creativo · En línea</p></div>
+    <button class="ai-x" id="ai-x">✕</button>
+  </div>
+  <div class="ai-msgs" id="ai-msgs"></div>
+  <div class="ai-qs" id="ai-qs"></div>
+  <div class="ai-inp">
+    <input type="text" id="ai-in" autocomplete="off" placeholder="Escribe tu pregunta...">
+    <button class="ai-send" id="ai-send">➤</button>
+  </div>
+</div>
+
+<script>
+/* ─── TRANSLATIONS ─── */
+const T={
+es:{
+  "nav.services":"Servicios","nav.pricing":"Planes","nav.process":"Proceso","nav.brief":"Brief",
+  "hero.eyebrow":"Agencia creativa premium",
+  "hero.title":"Haz que tu negocio se vea <em>serio</em>, moderno y listo para vender",
+  "hero.desc":"Creamos landing pages, logos, redes sociales, tarjetas digitales y presencia visual para negocios locales que quieren verse mejor y conseguir más clientes.",
+  "hero.cta1":"Hablar por WhatsApp →","hero.cta2":"Ver PDF",
+  "hero.m1":"Siempre activo","hero.m2n":"+Clientes","hero.m2":"Más oportunidades","hero.m3":"Personalizado",
+  "hero.ct":"Diseño visual que inspira confianza","hero.cd":"Creamos una presencia digital moderna y elegante para que tu negocio se vea premium desde el primer segundo.",
+  "t1":"Barberías","t2":"Restaurantes","t3":"Daycares","t4":"HVAC","t5":"Landscaping","t6":"Puertas y ventanas","t7":"Negocios locales",
+  "services.title":"Todo lo que tu negocio necesita para <em>destacar</em>",
+  "services.desc":"Todo lo que necesitas para que tu negocio se vea profesional y atraiga clientes.",
+  "s1t":"Landing Page","s1d":"Diseño moderno optimizado para convertir visitas en clientes.",
+  "s2t":"Diseño & Logo","s2d":"Imagen visual profesional que transmite confianza.",
+  "s3t":"Redes Sociales","s3d":"Contenido atractivo para posicionar tu marca.",
+  "s4t":"Tarjeta Digital","s4d":"Comparte tu negocio con un solo clic.",
+  "why.lbl":"Por qué importa","why.title":"Tu imagen <em>es</em> tu primer vendedor",
+  "why.desc":"Tu presencia digital no solo debe verse bien. Debe ayudarte a convencer, vender y destacar frente a la competencia.",
+  "wq1d":"Más clientes porque el camino hacia el contacto es más claro.","wq1t":"Conversión",
+  "wq2d":"Más credibilidad porque la marca se siente estructurada, no improvisada.","wq2t":"Percepción",
+  "wq3d":"Más valor percibido, lo que ayuda a justificar mejores precios.","wq3t":"Posicionamiento",
+  "wq4d":"Presencia visible 24/7 incluso cuando no estás respondiendo.","wq4t":"Disponibilidad",
+  "proof.t":"Una presencia premium cambia la impresión del cliente",
+  "proof.d":"Un negocio que se ve profesional transmite confianza desde el primer segundo.",
+  "pi1t":"Más confianza","pi1d":"Tu negocio luce más serio y mejor preparado.",
+  "pi2t":"Más contactos","pi2d":"El cliente entiende más rápido qué haces y cómo escribirte.",
+  "pi3t":"Más valor percibido","pi3d":"Una mejor imagen ayuda a justificar mejores precios.",
+  "test.lbl":"Testimonios","test.title":"Lo que dicen nuestros <em>clientes</em>","test.sub":"Resultados reales de negocios reales.",
+  "tq1":"Antes mi negocio se veía muy básico. Ahora tengo una imagen más profesional y recibo más mensajes cada semana.","ta1":"— Dueño de negocio local",
+  "tq2":"La diferencia es enorme. Ahora mis clientes confían más en mi negocio y me contactan con más seguridad.","ta2":"— Pequeño empresario",
+  "tq3":"Mi página ahora se ve moderna y profesional. Fue la mejor decisión para hacer crecer mi negocio.","ta3":"— Emprendedor",
+  "plans.lbl":"Planes","plans.title":"Elige el plan <em>ideal</em> para tu negocio","plans.sub":"Elige el nivel que mejor se adapte a tu negocio.","plans.badge":"Más vendido",
+  "p1n":"Basic","p1a":"Landing de 1 sección profesional","p1b":"Botón directo a WhatsApp","p1c":"Diseño limpio y adaptable a móvil","p1d":"Entrega lista para publicar","p1cta":"Consultar Basic",
+  "p2n":"Professional","p2a":"Landing premium de varias secciones","p2b":"Diseño visual más impactante","p2c":"Bilingüe (español / inglés)","p2d":"Botones, PDF y estructura comercial","p2e":"Lista para Netlify y dominio","p2cta":"Consultar Professional",
+  "p3n":"Premium","p3a":"Landing avanzada y branding visual","p3b":"Imagen más completa del negocio","p3c":"Secciones personalizadas","p3d":"Mayor enfoque en posicionamiento","p3e":"Ideal para negocios que quieren escalar","p3cta":"Consultar Premium",
+  "proc.title":"De idea a presencia <em>profesional</em> en 3 pasos","proc.desc":"Un camino simple para pasar de idea a presencia digital profesional.",
+  "st1t":"Nos escribes","st1d":"Nos cuentas qué hace tu negocio y qué quieres lograr.",
+  "st2t":"Diseñamos","st2d":"Creamos estructura, visual y mensaje de venta.",
+  "st3t":"Publicamos","st3d":"La dejamos lista para Netlify y para tu dominio cuando quieras.",
+  "brief.title":"La información que nos permite crear algo <em>extraordinario</em>",
+  "brief.desc":"La información correcta nos permite construir una landing realmente profesional.",
+  "bc1t":"Información básica","bc1a":"Nombre del negocio","bc1b":"Tipo de negocio","bc1c":"Ciudad, teléfono y WhatsApp","bc1d":"Horario y correo",
+  "bc2t":"Objetivo","bc2a":"Llamadas, ventas o reservas","bc2b":"Meta principal","bc2c":"Prioridad comercial",
+  "bc3t":"Cliente ideal","bc3a":"Edad y tipo de cliente","bc3b":"Problema que resuelves","bc3c":"Qué buscan de ti",
+  "bc4t":"Visuales y extras","bc4a":"Fotos, logo y colores","bc4b":"Redes y enlaces","bc4c":"Mantenimiento, SEO o publicidad",
+  "cta.lbl":"Tu próximo paso","cta.title":"Transforma tu negocio <em>hoy</em>",
+  "cta.desc":"No necesitas más seguidores… necesitas una imagen profesional que convierta visitas en clientes.",
+  "cta.b1":"Solicitar ahora →","cta.b2":"Ver presentación",
+  "wa.tip":"¡Escríbenos ahora!","ai.tip":"Asistente virtual",
+  "ai.name":"Asistente Creativo","ai.sub":"Tu Espacio Creativo · En línea",
+  "ai.welcome":"¡Hola! 👋 Soy el asistente de Tu Espacio Creativo. ¿En qué puedo ayudarte hoy?",
+  "ai.ph":"Escribe tu pregunta...",
+  "ai.qs":["¿Qué servicios ofrecen?","¿Cuánto cuesta una landing?","¿Cuánto tarda el proceso?","¿Trabajan con mi tipo de negocio?"]
+},
+en:{
+  "nav.services":"Services","nav.pricing":"Pricing","nav.process":"Process","nav.brief":"Brief",
+  "hero.eyebrow":"Premium creative agency",
+  "hero.title":"Make your business look <em>serious</em>, modern and ready to sell",
+  "hero.desc":"We create landing pages, logos, social media, digital business cards and visual presence for local businesses that want to look better and get more clients.",
+  "hero.cta1":"Chat on WhatsApp →","hero.cta2":"View PDF",
+  "hero.m1":"Always active","hero.m2n":"+Clients","hero.m2":"More opportunities","hero.m3":"Custom built",
+  "hero.ct":"Visual design that builds trust","hero.cd":"We create a modern and elegant digital presence so your business looks premium from the very first second.",
+  "t1":"Barbershops","t2":"Restaurants","t3":"Daycares","t4":"HVAC","t5":"Landscaping","t6":"Doors & Windows","t7":"Local Businesses",
+  "services.title":"Everything your business needs to <em>stand out</em>",
+  "services.desc":"Everything you need to look professional and attract clients.",
+  "s1t":"Landing Page","s1d":"Modern design optimized to convert visits into clients.",
+  "s2t":"Design & Logo","s2d":"Professional visual identity that builds trust.",
+  "s3t":"Social Media","s3d":"Attractive content to position your brand.",
+  "s4t":"Digital Business Card","s4d":"Share your business in one click.",
+  "why.lbl":"Why it matters","why.title":"Your image <em>is</em> your first salesperson",
+  "why.desc":"Your digital presence should not only look good. It should help you convince, sell and stand out from the competition.",
+  "wq1d":"More potential clients because the path to contact is clearer.","wq1t":"Conversion",
+  "wq2d":"More credibility because the brand feels structured, not improvised.","wq2t":"Perception",
+  "wq3d":"More perceived value, which helps justify better pricing.","wq3t":"Positioning",
+  "wq4d":"24/7 visibility even when you are not replying.","wq4t":"Availability",
+  "proof.t":"A premium presence changes the client's first impression",
+  "proof.d":"A business that looks professional builds trust immediately and makes it easier for people to contact you.",
+  "pi1t":"More trust","pi1d":"Your business looks more serious and better prepared.",
+  "pi2t":"More contacts","pi2d":"Customers understand faster what you do and how to contact you.",
+  "pi3t":"More perceived value","pi3d":"A better image helps justify better pricing.",
+  "test.lbl":"Testimonials","test.title":"What our <em>clients</em> say","test.sub":"Real results from real businesses.",
+  "tq1":"Before, my business looked very basic. Now I have a more professional image and receive more messages every week.","ta1":"— Local business owner",
+  "tq2":"The difference is huge. Now my customers trust my business more and contact me with greater confidence.","ta2":"— Small business owner",
+  "tq3":"My website now looks modern and professional. It was the best decision to grow my business.","ta3":"— Entrepreneur",
+  "plans.lbl":"Plans","plans.title":"Choose the <em>ideal</em> plan for your business","plans.sub":"Choose the level that best fits your business.","plans.badge":"Best seller",
+  "p1n":"Basic","p1a":"Professional 1-section landing page","p1b":"Direct WhatsApp button","p1c":"Clean mobile-friendly design","p1d":"Ready-to-publish delivery","p1cta":"Ask about Basic",
+  "p2n":"Professional","p2a":"Premium multi-section landing page","p2b":"More impactful visual design","p2c":"Bilingual (Spanish / English)","p2d":"Buttons, PDF and sales structure","p2e":"Ready for Netlify and domain","p2cta":"Ask about Professional",
+  "p3n":"Premium","p3a":"Advanced landing page and visual branding","p3b":"Stronger business image","p3c":"Custom sections","p3d":"Greater focus on positioning","p3e":"Ideal for businesses ready to scale","p3cta":"Ask about Premium",
+  "proc.title":"From idea to <em>professional</em> presence in 3 steps","proc.desc":"A simple path from idea to professional digital presence.",
+  "st1t":"You message us","st1d":"You tell us what your business does and what you want to achieve.",
+  "st2t":"We design","st2d":"We create structure, visual identity and sales message.",
+  "st3t":"We publish","st3d":"We leave it ready for Netlify and your domain whenever you want.",
+  "brief.title":"The information that lets us create something <em>extraordinary</em>",
+  "brief.desc":"The right information helps us build a truly professional landing page.",
+  "bc1t":"Basic information","bc1a":"Business name","bc1b":"Business type","bc1c":"City, phone and WhatsApp","bc1d":"Hours and email",
+  "bc2t":"Goal","bc2a":"Calls, sales or bookings","bc2b":"Main goal","bc2c":"Commercial priority",
+  "bc3t":"Ideal client","bc3a":"Age and customer type","bc3b":"Problem you solve","bc3c":"What they want from you",
+  "bc4t":"Visuals and extras","bc4a":"Photos, logo and colors","bc4b":"Social links","bc4c":"Maintenance, SEO or ads",
+  "cta.lbl":"Your next step","cta.title":"Transform your business <em>today</em>",
+  "cta.desc":"You don't need more followers… you need a professional image that turns visitors into customers.",
+  "cta.b1":"Get started →","cta.b2":"View brochure",
+  "wa.tip":"Message us now!","ai.tip":"Virtual assistant",
+  "ai.name":"Creative Assistant","ai.sub":"Tu Espacio Creativo · Online",
+  "ai.welcome":"Hi! 👋 I'm Tu Espacio Creativo's assistant. How can I help you today?",
+  "ai.ph":"Type your question...",
+  "ai.qs":["What services do you offer?","How much does a landing page cost?","How long does the process take?","Do you work with my type of business?"]
+}};
+
+let lang='es';
+function setLang(l){
+  lang=l;document.documentElement.lang=l;localStorage.setItem('lg',l);
+  document.getElementById('bes').classList.toggle('on',l==='es');
+  document.getElementById('ben').classList.toggle('on',l==='en');
+  document.querySelectorAll('[data-k]').forEach(el=>{const v=T[l][el.getAttribute('data-k')];if(v!==undefined)el.textContent=v;});
+  document.querySelectorAll('[data-kh]').forEach(el=>{const v=T[l][el.getAttribute('data-kh')];if(v!==undefined)el.innerHTML=v;});
+  document.getElementById('ai-in').placeholder=T[l]['ai.ph']||'';
+  if(aiGreeted) renderQs();
+}
+document.getElementById('bes').onclick=()=>setLang('es');
+document.getElementById('ben').onclick=()=>setLang('en');
+
+/* ─── THEME ─── */
+const thm=document.getElementById('thm');
+function applyTheme(dk){document.body.classList.toggle('dark',dk);thm.textContent=dk?'☀':'☾';localStorage.setItem('th',dk?'d':'l');}
+thm.onclick=()=>applyTheme(!document.body.classList.contains('dark'));
+
+/* ─── NAV + SCROLL BAR ─── */
+const nav=document.getElementById('nav'),sbar=document.getElementById('sbar');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('sc',scrollY>20);
+  sbar.style.width=(scrollY/(document.body.scrollHeight-innerHeight)*100)+'%';
+},{passive:true});
+
+/* ─── PARALLAX ─── */
+const hpar=document.getElementById('hpar');
+window.addEventListener('scroll',()=>{if(innerWidth>768&&hpar)hpar.style.transform=`translateY(${scrollY*.10}px)`;},{passive:true});
+
+/* ─── REVEAL ─── */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}}),{threshold:.1});
+document.querySelectorAll('.rv,.rvl,.rvr').forEach(el=>io.observe(el));
+
+/* ─── CURSOR ─── */
+const cur=document.getElementById('cur'),crng=document.getElementById('crng');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
+(function ar(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;crng.style.left=rx+'px';crng.style.top=ry+'px';requestAnimationFrame(ar);})();
+document.querySelectorAll('a,button').forEach(el=>{
+  el.addEventListener('mouseenter',()=>document.body.classList.add('ch'));
+  el.addEventListener('mouseleave',()=>document.body.classList.remove('ch'));
+});
+
+/* ─── AI ASSISTANT ─── */
+const aiWin=document.getElementById('ai-win');
+const aiMsgsEl=document.getElementById('ai-msgs');
+const aiInp=document.getElementById('ai-in');
+let aiOpen=false,aiGreeted=false,history=[];
+
+function toggleAI(v){
+  aiOpen=v!==undefined?v:!aiOpen;
+  aiWin.classList.toggle('open',aiOpen);
+  if(aiOpen&&!aiGreeted){aiGreeted=true;setTimeout(()=>{addMsg('bot',T[lang]['ai.welcome']);renderQs();},280);}
+  if(aiOpen)aiInp.focus();
+}
+document.getElementById('ai-btn').onclick=()=>toggleAI();
+document.getElementById('ai-x').onclick=()=>toggleAI(false);
+
+function addMsg(role,text){
+  const d=document.createElement('div');
+  d.className='msg '+role;d.textContent=text;
+  aiMsgsEl.appendChild(d);aiMsgsEl.scrollTop=aiMsgsEl.scrollHeight;
+  return d;
+}
+function showTyping(){
+  const d=document.createElement('div');d.className='msg typ';d.id='td';
+  d.innerHTML='<div class="dots"><span></span><span></span><span></span></div>';
+  aiMsgsEl.appendChild(d);aiMsgsEl.scrollTop=aiMsgsEl.scrollHeight;
+}
+function rmTyping(){const t=document.getElementById('td');if(t)t.remove();}
+
+function renderQs(){
+  const qs=document.getElementById('ai-qs');qs.innerHTML='';
+  (T[lang]['ai.qs']||[]).forEach(q=>{
+    const b=document.createElement('button');b.className='ai-q';b.textContent=q;
+    b.onclick=()=>send(q);qs.appendChild(b);
+  });
+}
+
+async function send(text){
+  const msg=(text||aiInp.value).trim();if(!msg)return;
+  aiInp.value='';document.getElementById('ai-qs').innerHTML='';
+  addMsg('usr',msg);history.push({role:'user',content:msg});
+  showTyping();
+  const sys=lang==='es'
+    ?`Eres el asistente virtual de "Tu Espacio Creativo", agencia creativa premium en Miami que diseña landing pages, branding, logos, redes sociales y tarjetas digitales para negocios locales. Responde en español, amable y conciso. Planes: Basic $199 (1 sección, WhatsApp, móvil), Professional $399 (varias secciones, bilingüe, Netlify — el más vendido), Premium $699+ (branding avanzado, secciones personalizadas). Proceso: 1) Nos escribes, 2) Diseñamos, 3) Publicamos. WhatsApp: +1-786-354-8796. Si no sabes algo, invita a escribir por WhatsApp.`
+    :`You are the virtual assistant of "Tu Espacio Creativo", a premium creative agency in Miami that designs landing pages, branding, logos, social media and digital business cards for local businesses. Respond in English, friendly and concise. Plans: Basic $199 (1-section, WhatsApp, mobile), Professional $399 (multi-section, bilingual, Netlify — best seller), Premium $699+ (advanced branding, custom sections). Process: 1) You message us, 2) We design, 3) We publish. WhatsApp: +1-786-354-8796. If unsure, invite them to message on WhatsApp.`;
+  try{
+    const r=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:380,system:sys,messages:history})
     });
+    const d=await r.json();rmTyping();
+    const reply=(d.content&&d.content[0]&&d.content[0].text)||(lang==='es'?'Disculpa, hubo un error. Escríbenos por WhatsApp 📲':'Sorry, something went wrong. Message us on WhatsApp 📲');
+    addMsg('bot',reply);history.push({role:'assistant',content:reply});
+  }catch{
+    rmTyping();addMsg('bot',lang==='es'?'Disculpa, no pude conectarme. Escríbenos por WhatsApp 📲':'Could not connect. Message us on WhatsApp 📲');
+  }
+}
+document.getElementById('ai-send').onclick=()=>send();
+aiInp.addEventListener('keydown',e=>{if(e.key==='Enter')send();});
 
-
-
-    document.getElementById('btn-es').onclick = () => setLang('es');
-
-    document.getElementById('btn-en').onclick = () => setLang('en');
-
-
-
-    window.addEventListener('scroll', handleNavbar, { passive: true });
-
-    window.addEventListener('scroll', revealOnScroll, { passive: true });
-
-    window.addEventListener('scroll', applyParallax, { passive: true });
-
-
-
-    window.addEventListener('load', () => {
-
-      applySavedTheme();
-
-
-
-      const savedLang = localStorage.getItem("site-lang");
-
-      const browserLang = (navigator.language || 'es').toLowerCase();
-
-      const initialLang = savedLang || (browserLang.startsWith('en') ? 'en' : 'es');
-
-
-
-      setLang(initialLang);
-
-      handleNavbar();
-
-      revealOnScroll();
-
-      applyParallax();
-
-
-
-      setTimeout(() => {
-
-        loader.classList.add('hide');
-
-      }, 500);
-
-    });
-
-  </script>
-
-
-
+/* ─── INIT ─── */
+window.addEventListener('load',()=>{
+  applyTheme(localStorage.getItem('th')==='d');
+  const sl=localStorage.getItem('lg'),bl=(navigator.language||'es').toLowerCase();
+  setLang(sl||(bl.startsWith('en')?'en':'es'));
+  setTimeout(()=>document.getElementById('ldr').classList.add('done'),1350);
+});
+</script>
 </body>
-
 </html>
