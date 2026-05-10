@@ -344,11 +344,15 @@ let aiOpen=false,aiGreeted=false;
 function toggleAI(v){
   aiOpen=v!==undefined?v:!aiOpen;
   aiWin.classList.toggle('open',aiOpen);
-  if(aiOpen&&!aiGreeted){
+  if(aiOpen){
+    /* Resetea siempre al abrir: chat fresco con saludo y preguntas */
+    aiMsgsEl.innerHTML='';
+    document.getElementById('ai-qs').innerHTML='';
+    aiInp.value='';
     aiGreeted=true;
-    setTimeout(()=>{addMsg('bot',T[lang]['ai.welcome']);renderQs();},280);
+    setTimeout(()=>{addMsg('bot',T[lang]['ai.welcome']);renderQs();},220);
+    aiInp.focus();
   }
-  if(aiOpen)aiInp.focus();
 }
 document.getElementById('ai-btn').onclick=()=>toggleAI();
 document.getElementById('ai-x').onclick=()=>toggleAI(false);
@@ -367,11 +371,16 @@ function showTyping(){
 }
 function rmTyping(){const t=document.getElementById('td');if(t)t.remove();}
 
+/* Renderiza los botones de preguntas rápidas */
 function renderQs(){
-  const qs=document.getElementById('ai-qs');qs.innerHTML='';
+  const qs=document.getElementById('ai-qs');
+  qs.innerHTML='';
   (T[lang]['ai.qs']||[]).forEach(q=>{
-    const b=document.createElement('button');b.className='ai-q';b.textContent=q;
-    b.onclick=()=>send(q);qs.appendChild(b);
+    const b=document.createElement('button');
+    b.className='ai-q';
+    b.textContent=q;
+    b.onclick=()=>send(q);
+    qs.appendChild(b);
   });
 }
 
@@ -379,10 +388,16 @@ function send(text){
   const msg=(text||aiInp.value).trim();
   if(!msg)return;
   aiInp.value='';
+  /* Oculta preguntas mientras escribe */
   document.getElementById('ai-qs').innerHTML='';
   addMsg('usr',msg);
   showTyping();
-  setTimeout(()=>{rmTyping();addMsg('bot',smartReply(msg));},650);
+  setTimeout(()=>{
+    rmTyping();
+    addMsg('bot',smartReply(msg));
+    /* BUG 1 FIX: devuelve las preguntas después de responder */
+    renderQs();
+  },650);
 }
 document.getElementById('ai-send').onclick=()=>send();
 aiInp.addEventListener('keydown',e=>{if(e.key==='Enter')send();});
@@ -390,12 +405,32 @@ aiInp.addEventListener('keydown',e=>{if(e.key==='Enter')send();});
 /* ════ IDIOMA ════ */
 let lang='es';
 function setLang(l){
-  lang=l;document.documentElement.lang=l;localStorage.setItem('lg',l);
+  lang=l;
+  document.documentElement.lang=l;
+  localStorage.setItem('lg',l);
   document.getElementById('bes').classList.toggle('on',l==='es');
   document.getElementById('ben').classList.toggle('on',l==='en');
-  document.querySelectorAll('[data-k]').forEach(el=>{const v=T[l][el.getAttribute('data-k')];if(v!==undefined)el.textContent=v;});
-  document.querySelectorAll('[data-kh]').forEach(el=>{const v=T[l][el.getAttribute('data-kh')];if(v!==undefined)el.innerHTML=v;});
+  /* Actualiza todos los textos del sitio */
+  document.querySelectorAll('[data-k]').forEach(el=>{
+    const v=T[l][el.getAttribute('data-k')];
+    if(v!==undefined)el.textContent=v;
+  });
+  document.querySelectorAll('[data-kh]').forEach(el=>{
+    const v=T[l][el.getAttribute('data-kh')];
+    if(v!==undefined)el.innerHTML=v;
+  });
+  /* BUG 2 FIX: actualiza textos del asistente */
   document.getElementById('ai-in').placeholder=T[l]['ai.ph']||'';
+  document.querySelector('.ai-hd-txt h4').textContent=T[l]['ai.name']||'';
+  document.querySelector('.ai-hd-txt p').textContent=T[l]['ai.sub']||'';
+  document.querySelector('.wa-tip').textContent=T[l]['wa.tip']||'';
+  document.querySelector('.ai-tip').textContent=T[l]['ai.tip']||'';
+  /* BUG 2 FIX: reinicia el chat con saludo en el idioma nuevo */
+  if(aiGreeted){
+    aiMsgsEl.innerHTML='';
+    addMsg('bot',T[l]['ai.welcome']);
+    renderQs();
+  }
 }
 document.getElementById('bes').onclick=()=>setLang('es');
 document.getElementById('ben').onclick=()=>setLang('en');
